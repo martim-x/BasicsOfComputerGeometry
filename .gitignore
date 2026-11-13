@@ -163,6 +163,17 @@ CMakeCache.txt
 cmake_install.cmake
 Makefile.in
 
+# === Visual Studio / MSBuild (binaries, кэш, лог сборки) ===
+.vs/
+x64/
+Debug/
+Release/
+*.aps
+*.ilk
+*.res
+*.tlog
+*.obj.dt.*
+
 # === C# / .NET ===
 [Bb]in/
 [Oo]bj/
