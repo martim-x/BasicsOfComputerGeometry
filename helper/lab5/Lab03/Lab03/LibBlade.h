@@ -1,4 +1,4 @@
-#ifndef LIBPLANETS
+п»ї#ifndef LIBPLANETS
 #define LIBPLANETS 1
 const double pi = 3.14159;
 
@@ -18,7 +18,7 @@ struct CRectD
 	CRectD() { left = top = right = bottom = 0; };
 	CRectD(double l, double t, double r, double b);
 	void SetRectD(double l, double t, double r, double b);
-	CSizeD SizeD();		// Возвращает размеры(ширина, высота) прямоугольника 
+	CSizeD SizeD();		// СЂР°Р·РјРµСЂС‹ РїСЂСЏРјРѕСѓРіРѕР»СЊРЅРёРєР° (С€РёСЂРёРЅР°, РІС‹СЃРѕС‚Р°) РІ РјРёСЂРѕРІС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С…
 };
 //-------------------------------------------------------------------------------
 
@@ -31,43 +31,28 @@ void SetMyMode(CDC& dc, CRectD& RS, CRect& RW);
 
 class CBlade
 {
-	CRect MainPoint;
-	CRect FirstTop;
-	CRect SecondTop;
-	CRect FirstBootom;
-	CRect SecondBootom;
-	CRect WayRotation;
-	CMatrix FTCoords;
-	CMatrix STCoords;
-	CMatrix FBCoords;
-	CMatrix SBCoords;
-	CMatrix FTHCoords;
-	CMatrix STHCoords;
-	CMatrix FBHCoords;
-	CMatrix SBHCoords;
-	CRect RW;		   // Прямоугольник в окне
-	CRectD RS;		   // Прямоугольник области в МСК
-	double wPoint;		//угловая скорость
-	double fiSB;
-	double fiFB;
-	double fiST;
-	double fiFT;
-	double fiHSB;
-	double fiHFB;
-	double fiHST;
-	double fiHFT;
-
-	double dt;		   // Интервал дискретизации, сек.
+	double angleDegrees;					// С‚РµРєСѓС‰РёР№ СѓРіРѕР» РїРѕРІРѕСЂРѕС‚Р° С„РёРіСѓСЂС‹
+	double angularSpeedDegreesPerSecond;	// СѓРіР»РѕРІР°СЏ СЃРєРѕСЂРѕСЃС‚СЊ, РіСЂР°РґСѓСЃРѕРІ РІ СЃРµРєСѓРЅРґСѓ
+	int bladeCount;						// РєРѕР»РёС‡РµСЃС‚РІРѕ Р»РѕРїР°СЃС‚РµР№
+	double innerRadius;					// СЂР°СЃСЃС‚РѕСЏРЅРёРµ РѕС‚ С†РµРЅС‚СЂР° РґРѕ РїР»РѕСЃРєРѕРіРѕ РѕСЃРЅРѕРІР°РЅРёСЏ
+	double outerRadius;					// СЂР°СЃСЃС‚РѕСЏРЅРёРµ РѕС‚ С†РµРЅС‚СЂР° РґРѕ РѕСЃС‚СЂРёСЏ Р»РѕРїР°СЃС‚Рё
+	double bladeHalfWidth;				// РїРѕР»РѕРІРёРЅР° С€РёСЂРёРЅС‹ РѕСЃРЅРѕРІР°РЅРёСЏ Р»РѕРїР°СЃС‚Рё
+	double hubRadius;					// СЂР°РґРёСѓСЃ С†РµРЅС‚СЂР°Р»СЊРЅРѕР№ РІС‚СѓР»РєРё РІ РјРёСЂРѕРІС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С…
+	CRect RW;							// РѕР±Р»Р°СЃС‚СЊ РѕС‚РѕР±СЂР°Р¶РµРЅРёСЏ РІ РѕРєРЅРµ
+	CRectD RS;							// РѕР±Р»Р°СЃС‚СЊ РІ РјРёСЂРѕРІС‹С… РєРѕРѕСЂРґРёРЅР°С‚Р°С…
 public:
 	CBlade();
-	void DrawTriangle(CMatrix FTCoords, CMatrix STCoords, CDC& dc, bool color);
-	void SetDT(double dtx) { dt = dtx; };	// Установка интервала дискретизации
-	void SetNewCoords();					// Вычисляет новые координаты планет
-	void GetRS(CRectD& RSX);				// Возвращает область графика в мировой СК
-	CRect GetRW() { return RW; };			// Возвращает область графика в окне	
-	void Draw(CDC& dc);						// Рисование без самостоятельного пересчета координат
+	void SetAngularSpeed(double speedDegreesPerSecond);
+	double GetAngularSpeed() const { return angularSpeedDegreesPerSecond; };
+	bool SetBladeCount(int count);
+	int GetBladeCount() const { return bladeCount; };
+	void Advance(double elapsedSeconds);
+	bool IsHubHit(CPoint point) const;
+	void GetRS(CRectD& RSX) const;
+	CRect GetRW() const { return RW; };
+	void SetRW(const CRect& rw) { RW = rw; };
+	void Draw(CDC& dc);
 };
 
 
 #endif
-

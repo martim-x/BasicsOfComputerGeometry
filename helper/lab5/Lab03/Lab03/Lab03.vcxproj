@@ -186,6 +186,7 @@
   <ItemGroup>
     <ClInclude Include="ChildView.h" />
     <ClInclude Include="CMatrix.h" />
+    <ClInclude Include="BladeGeometry.h" />
     <ClInclude Include="Lab03.h" />
     <ClInclude Include="LibBlade.h" />
     <ClInclude Include="MainFrm.h" />
@@ -195,6 +196,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ChildView.cpp" />
+    <ClCompile Include="BladeGeometry.cpp">
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="CMatrix.cpp" />
     <ClCompile Include="Lab03.cpp" />
     <ClCompile Include="LibBlade.cpp" />
