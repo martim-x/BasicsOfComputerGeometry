@@ -1,170 +1,56 @@
-﻿
-// MyPlot2D.cpp: определяет поведение классов для приложения.
-//
+#include <afxwin.h>
+#include "ChildView.h"
 
-#include "pch.h"
-#include "framework.h"
-#include "afxwinappex.h"
-#include "afxdialogex.h"
-#include "MyPlot2D.h"
-#include "MainFrm.h"
-
-
-#ifdef _DEBUG
-#define new DEBUG_NEW
-#endif
-
-
-// CMyPlot2DApp
-
-BEGIN_MESSAGE_MAP(CMyPlot2DApp, CWinApp)
-	ON_COMMAND(ID_APP_ABOUT, &CMyPlot2DApp::OnAppAbout)
-END_MESSAGE_MAP()
-
-
-// Создание CMyPlot2DApp
-
-CMyPlot2DApp::CMyPlot2DApp() noexcept
+class CMainFrame : public CFrameWnd
 {
+    CChildView view;
+    DECLARE_MESSAGE_MAP()
 
-	// поддержка диспетчера перезагрузки
-	m_dwRestartManagerSupportFlags = AFX_RESTART_MANAGER_SUPPORT_ALL_ASPECTS;
-#ifdef _MANAGED
-	// Если приложение построено с поддержкой среды Common Language Runtime (/clr):
-	//     1) Этот дополнительный параметр требуется для правильной поддержки работы диспетчера перезагрузки.
-	//   2) В своем проекте для сборки необходимо добавить ссылку на System.Windows.Forms.
-	System::Windows::Forms::Application::SetUnhandledExceptionMode(System::Windows::Forms::UnhandledExceptionMode::ThrowException);
-#endif
+    afx_msg void OnTestF1() { view.SelectF1(); }
+    afx_msg void OnTestF2() { view.SelectF2(); }
+    afx_msg void OnTestF3() { view.SelectF3(); }
 
-	// TODO: замените ниже строку идентификатора приложения строкой уникального идентификатора; рекомендуемый
-	// формат для строки: ИмяКомпании.ИмяПродукта.СубПродукт.СведенияОВерсии
-	SetAppID(_T("MyPlot2D.AppID.NoVersion"));
-
-	// TODO: добавьте код создания,
-	// Размещает весь важный код инициализации в InitInstance
-}
-
-
-
-CMyPlot2DApp theApp;
-
-
-// Инициализация CMyPlot2DApp
-
-BOOL CMyPlot2DApp::InitInstance()
-{
-	// InitCommonControlsEx() требуются для Windows XP, если манифест
-	// приложения использует ComCtl32.dll версии 6 или более поздней версии для включения
-	// стилей отображения.  В противном случае будет возникать сбой при создании любого окна.
-	INITCOMMONCONTROLSEX InitCtrls;
-	InitCtrls.dwSize = sizeof(InitCtrls);
-	// Выберите этот параметр для включения всех общих классов управления, которые необходимо использовать
-	// в вашем приложении.
-	InitCtrls.dwICC = ICC_WIN95_CLASSES;
-	InitCommonControlsEx(&InitCtrls);
-
-	CWinApp::InitInstance();
-
-
-	// Инициализация библиотек OLE
-	if (!AfxOleInit())
-	{
-		AfxMessageBox(IDP_OLE_INIT_FAILED);
-		return FALSE;
-	}
-
-	AfxEnableControlContainer();
-
-	EnableTaskbarInteraction(FALSE);
-
-	// Для использования элемента управления RichEdit требуется метод AfxInitRichEdit2()
-	// AfxInitRichEdit2();
-
-	// Стандартная инициализация
-	// Если эти возможности не используются и необходимо уменьшить размер
-	// конечного исполняемого файла, необходимо удалить из следующего
-	// конкретные процедуры инициализации, которые не требуются
-	// Измените раздел реестра, в котором хранятся параметры
-	// TODO: следует изменить эту строку на что-нибудь подходящее,
-	// например на название организации
-	SetRegistryKey(_T("Локальные приложения, созданные с помощью мастера приложений"));
-
-
-	// Чтобы создать главное окно, этот код создает новый объект окна
-	// рамки, а затем задает его как объект основного окна приложения
-	CFrameWnd* pFrame = new CMainFrame;
-	if (!pFrame)
-		return FALSE;
-	m_pMainWnd = pFrame;
-	// создайте и загрузите рамку с его ресурсами
-	pFrame->LoadFrame(IDR_MAINFRAME,
-		WS_OVERLAPPEDWINDOW | FWS_ADDTOTITLE, nullptr,
-		nullptr);
-
-
-	// Разрешить использование расширенных символов в горячих клавишах меню
-	CMFCToolBar::m_bExtCharTranslation = TRUE;
-
-
-
-
-	// Одно и только одно окно было инициализировано, поэтому отобразите и обновите его
-	pFrame->ShowWindow(SW_SHOW);
-	pFrame->UpdateWindow();
-	return TRUE;
-}
-
-int CMyPlot2DApp::ExitInstance()
-{
-	//TODO: обработайте дополнительные ресурсы, которые могли быть добавлены
-	AfxOleTerm(FALSE);
-
-	return CWinApp::ExitInstance();
-}
-
-// Обработчики сообщений CMyPlot2DApp
-
-
-// Диалоговое окно CAboutDlg используется для описания сведений о приложении
-
-class CAboutDlg : public CDialogEx
-{
 public:
-	CAboutDlg() noexcept;
+    CMainFrame()
+    {
+        Create(nullptr, _T("Lab 3"),
+               WS_OVERLAPPEDWINDOW, rectDefault, nullptr);
 
-// Данные диалогового окна
-#ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_ABOUTBOX };
-#endif
+        CMenu* menu = new CMenu;
+        menu->CreateMenu();
+        CMenu tests;
+        tests.CreatePopupMenu();
+        tests.AppendMenu(MF_STRING, ID_TEST_F1, _T("F1"));
+        tests.AppendMenu(MF_STRING, ID_TEST_F2, _T("F2"));
+        tests.AppendMenu(MF_STRING, ID_TEST_F3, _T("F3"));
+        menu->AppendMenu(MF_POPUP, (UINT_PTR)tests.Detach(), _T("Tests_F"));
+        SetMenu(menu);
+        menu->Detach();
+        delete menu;
 
-protected:
-	virtual void DoDataExchange(CDataExchange* pDX);    // поддержка DDX/DDV
-
-// Реализация
-protected:
-	DECLARE_MESSAGE_MAP()
+        view.Create(nullptr, nullptr, WS_CHILD | WS_VISIBLE,
+                    CRect(0, 0, 800, 600), this, 1000);
+    }
 };
 
-CAboutDlg::CAboutDlg() noexcept : CDialogEx(IDD_ABOUTBOX)
-{
-}
-
-void CAboutDlg::DoDataExchange(CDataExchange* pDX)
-{
-	CDialogEx::DoDataExchange(pDX);
-}
-
-BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)
+BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
+    ON_COMMAND(ID_TEST_F1, &CMainFrame::OnTestF1)
+    ON_COMMAND(ID_TEST_F2, &CMainFrame::OnTestF2)
+    ON_COMMAND(ID_TEST_F3, &CMainFrame::OnTestF3)
 END_MESSAGE_MAP()
 
-// Команда приложения для запуска диалога
-void CMyPlot2DApp::OnAppAbout()
+class CMyPlot2DApp : public CWinApp
 {
-	CAboutDlg aboutDlg;
-	aboutDlg.DoModal();
-}
+public:
+    BOOL InitInstance() override
+    {
+        CWinApp::InitInstance();
+        CMainFrame* frame = new CMainFrame;
+        m_pMainWnd = frame;
+        frame->ShowWindow(SW_SHOWMAXIMIZED);   // окно сразу на весь экран
+        frame->UpdateWindow();
+        return TRUE;
+    }
+};
 
-// Обработчики сообщений CMyPlot2DApp
-
-
-
+CMyPlot2DApp theApp;
