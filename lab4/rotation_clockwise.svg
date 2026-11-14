@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="650" viewBox="0 0 820 650" role="img" aria-labelledby="title desc">
+  <title id="title">Поворот трапеции на 90° по часовой стрелке вокруг P(10,5)</title>
+  <desc id="desc">Исходная трапеция ABCD и повернутая трапеция A'B'C'D'. Масштаб по осям одинаковый, пунктирные стрелки показывают соответствие вершин.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L6,3 z" fill="#64748b"/>
+    </marker>
+    <style>
+      text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; fill: #1f2937; }
+      .grid { stroke: #e5e7eb; stroke-width: 1; }
+      .axis { stroke: #374151; stroke-width: 1.6; }
+      .original { fill: #3b82f622; stroke: #2563eb; stroke-width: 3; }
+      .rotated { fill: #f9731622; stroke: #ea580c; stroke-width: 3; }
+      .connector { stroke: #64748b; stroke-width: 1.5; stroke-dasharray: 5 5; marker-end: url(#arrow); }
+      .vertex { stroke: white; stroke-width: 2; }
+      .label { font-size: 14px; font-weight: 600; }
+      .tick { font-size: 12px; fill: #6b7280; }
+    </style>
+  </defs>
+  <rect width="820" height="650" fill="#ffffff"/>
+  <text x="410" y="28" text-anchor="middle" font-size="19" font-weight="700">Поворот трапеции на 90° по часовой стрелке</text>
+  <text x="410" y="50" text-anchor="middle" font-size="13" fill="#6b7280">центр P = (10, 5); одинаковый масштаб по осям; x вправо, y вверх</text>
+
+  <!-- Plot bounds: x=0..20, y=-1..13; 32 px per coordinate unit -->
+  <g class="grid">
+    <path d="M90 70V518 M154 70V518 M218 70V518 M282 70V518 M346 70V518 M410 70V518 M474 70V518 M538 70V518 M602 70V518 M666 70V518 M730 70V518"/>
+    <path d="M90 518H730 M90 454H730 M90 390H730 M90 326H730 M90 262H730 M90 198H730 M90 134H730 M90 70H730"/>
+  </g>
+  <g class="axis">
+    <path d="M90 486H746"/><path d="M90 518V68"/>
+    <path d="M746 486l-8 -4v8z" fill="#374151"/><path d="M90 68l-4 8h8z" fill="#374151"/>
+  </g>
+  <g class="tick" text-anchor="middle">
+    <text x="90" y="540">0</text><text x="154" y="540">2</text><text x="218" y="540">4</text><text x="282" y="540">6</text><text x="346" y="540">8</text><text x="410" y="540">10</text><text x="474" y="540">12</text><text x="538" y="540">14</text><text x="602" y="540">16</text><text x="666" y="540">18</text><text x="730" y="540">20</text>
+  </g>
+  <g class="tick" text-anchor="end">
+    <text x="80" y="522">−1</text><text x="80" y="458">1</text><text x="80" y="394">3</text><text x="80" y="330">5</text><text x="80" y="266">7</text><text x="80" y="202">9</text><text x="80" y="138">11</text><text x="80" y="74">13</text>
+  </g>
+  <text x="755" y="491" font-size="14" font-style="italic">x</text><text x="84" y="64" font-size="14" font-style="italic">y</text>
+
+  <!-- Correspondence arrows from original to rotated vertices -->
+  <g class="connector" fill="none">
+    <path d="M218 422 Q262 245 314 134"/>
+    <path d="M218 230 Q360 120 506 134"/>
+    <path d="M282 262 Q380 210 474 198"/>
+    <path d="M282 390 Q314 270 346 198"/>
+  </g>
+
+  <!-- Original ABCD: A(4,2), B(4,8), C(6,7), D(6,3) -->
+  <polygon class="original" points="218,422 218,230 282,262 282,390"/>
+  <!-- Clockwise-rotated A'B'C'D': A'(7,11), B'(13,11), C'(12,9), D'(8,9) -->
+  <polygon class="rotated" points="314,134 506,134 474,198 346,198"/>
+
+  <!-- Rotation center P(10,5) -->
+  <circle cx="410" cy="326" r="5" fill="#111827"/>
+  <text x="420" y="346" class="label">P (10, 5)</text>
+
+  <!-- Original vertices -->
+  <g fill="#2563eb">
+    <circle class="vertex" cx="218" cy="422" r="5"/><circle class="vertex" cx="218" cy="230" r="5"/>
+    <circle class="vertex" cx="282" cy="262" r="5"/><circle class="vertex" cx="282" cy="390" r="5"/>
+  </g>
+  <!-- Rotated vertices -->
+  <g fill="#ea580c">
+    <circle class="vertex" cx="314" cy="134" r="5"/><circle class="vertex" cx="506" cy="134" r="5"/>
+    <circle class="vertex" cx="474" cy="198" r="5"/><circle class="vertex" cx="346" cy="198" r="5"/>
+  </g>
+  <g class="label">
+    <text x="166" y="445">A (4, 2)</text><text x="160" y="222">B (4, 8)</text>
+    <text x="287" y="250">C (6, 7)</text><text x="263" y="410">D (6, 3)</text>
+    <text x="274" y="120">A′ (7, 11)</text><text x="512" y="126">B′ (13, 11)</text>
+    <text x="482" y="222">C′ (12, 9)</text><text x="300" y="220">D′ (8, 9)</text>
+  </g>
+
+  <g font-size="13">
+    <rect x="123" y="594" width="16" height="12" fill="#3b82f633" stroke="#2563eb" stroke-width="2"/><text x="147" y="605">исходная ABCD</text>
+    <rect x="288" y="594" width="16" height="12" fill="#f9731633" stroke="#ea580c" stroke-width="2"/><text x="312" y="605">после поворота A′B′C′D′</text>
+    <path d="M541 600h34" class="connector"/><text x="583" y="605">соответствие вершин</text>
+  </g>
+</svg>
