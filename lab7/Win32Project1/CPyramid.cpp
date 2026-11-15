@@ -3,7 +3,7 @@
 #include <fstream>
 #include <string>
 #include <vector>
-#define pi 3.14159265;
+const double pi = 3.141592653589793;
 using namespace std;
 
 CPyramid::CPyramid()
@@ -27,32 +27,15 @@ CPyramid::CPyramid()
 	}
 }
 
-double ScalarMultiply(CMatrix& V1, CMatrix& V2)
-{
-	if (V1.rows() != V2.rows() || V1.cols() > 1 || V2.cols() > 1) // Число столбцов больше одного 
-	{
-		char* error = "double ScalarMult(CMatrix& V1, CMatrix& V2) объект не вектор - число столбцов больше 1 ";
-		MessageBoxA(NULL, error, "Ошибка", MB_ICONSTOP);
-		exit(1);
-	}
 
-	return V1(0) * V2(0) + V1(1) * V2(1) + V1(2) * V2(2);
-}
 
-bool IsNegative(CPoint& V) {
-	return V.x > 0 && V.y > 0;
-}
-
-void DrawLine(CDC& dc, CPoint* f, CPoint& s) {
-	dc.Polygon(f, 4);
-}
 
 void CPyramid::Draw1(CDC& dc, CMatrix& PView, CRect& RW)			// с удалением ребер
 {
 	CMatrix XV = CreateViewCoord(PView(0), PView(1), PView(2));		// получаем матрицу пересчета
 	CMatrix ViewVert = XV * this->Vertices;							// Kview * PIR
 	CRectD RectView;
-	GetRect(this->Vertices, RectView);								// задание области
+	GetRect(ViewVert, RectView);								// задание области
 
 	CMatrix MW = SpaceToWindow(RectView, RW);
 	CPoint MasVert[6], A1B1C1[3], ABC[3];
@@ -84,8 +67,7 @@ void CPyramid::Draw1(CDC& dc, CMatrix& PView, CRect& RW)			// с удалени�
 	CBrush BottopBrush(RGB(34, 245, 206));				// цвет нижней грани
 	CBrush TopBrush(RGB(5, 192, 34));					// цвет верхней грани
 	CBrush BaseBrush(RGB(255, 255, 255));				// цвет остальных граней
-	CBrush* pOldBrush = dc.SelectObject(&BottopBrush);
-	dc.SelectObject(&BaseBrush);
+	CBrush* pOldBrush = dc.SelectObject(&BaseBrush);
 	CPoint ABB1A1[4];
 	ABB1A1[0] = ABC[0];
 	ABB1A1[1] = ABC[1];
@@ -152,14 +134,6 @@ void CPyramid::Draw1(CDC& dc, CMatrix& PView, CRect& RW)			// с удалени�
 }
 
 
-bool IsNegative(CPoint& V);
-void DrawLine(CDC& dc, CPoint& f, CPoint& s) {
-	
-}
-
-CPoint VectorMulty(CPoint& V1, CPoint& V2) {
-	return V1;
-}
 
 CMatrix CreateViewCoord(double r, double fi, double q)			// МСК -> ВСК
 {
@@ -237,7 +211,7 @@ void CPyramid::Draw(CDC &dc, CMatrix&PView, CRect &RW)			// без удален�
 	CMatrix XV = CreateViewCoord(PView(0), PView(1), PView(2));
 	CMatrix ViewVert = XV * this->Vertices;
 	CRectD RectView;
-	GetRect(Vertices, RectView);
+	GetRect(ViewVert, RectView);
 	CMatrix MW = SpaceToWindow(RectView, RW);
 	CPoint MasVert[6], a1b1c1[3], abc[3];
 	CMatrix V(3);
@@ -289,28 +263,12 @@ void CPyramid::Draw(CDC &dc, CMatrix&PView, CRect &RW)			// без удален�
 
 void  CPyramid::GetRect(CMatrix& Vert, CRectD&RectView)
 {
-	RectView.top = Vert.GetRow(2).MinElement();
-	RectView.bottom = Vert.GetRow(2).MaxElement();
+	RectView.top = Vert.GetRow(1).MaxElement();
+	RectView.bottom = Vert.GetRow(1).MinElement();
 	RectView.left = Vert.GetRow(0).MinElement();
 	RectView.right = Vert.GetRow(0).MaxElement();
 }
 
-CMatrix VectorMultiply(CMatrix& V1, CMatrix& V2)
-{
-	if (V1.rows() != V2.rows() || V1.cols() > 1 || V2.cols() > 1) // Число столбцов больше одного 
-	{
-		char* error = "CMatrix VectorMult(CMatrix& V1, CMatrix& V2) объект не вектор - число столбцов больше 1 ";
-		MessageBoxA(NULL, error, "Ошибка", MB_ICONSTOP);
-		exit(1);
-	}
-
-	CMatrix Temp = V1;
-	Temp(0) = V1(1)*V2(2) - V1(2)*V2(1);
-	Temp(1) = V1(2)*V2(0) - V1(0)*V2(2);
-	Temp(2) = V1(0)*V2(1) - V1(1)*V2(0);
-
-	return Temp;
-}
 
 
 CMatrix VectorMult(CMatrix& V1, CMatrix& V2)
@@ -325,7 +283,7 @@ CMatrix VectorMult(CMatrix& V1, CMatrix& V2)
 	int b = b1 && b2;
 	if (!b)
 	{
-		char* error = "VectorMult: неправильные размерности векторов! ";
+		const char* error = "VectorMult: неправильные размерности векторов! ";
 		//MessageBox(NULL, error, "Ошибка", MB_ICONSTOP);
 		exit(1);
 	}
@@ -350,7 +308,7 @@ double ScalarMult(CMatrix& V1, CMatrix& V2)
 	int b = b1 && b2;
 	if (!b)
 	{
-		char* error = "ScalarMult: неправильные размерности векторов! ";
+		const char* error = "ScalarMult: неправильные размерности векторов! ";
 		//MessageBox(NULL, error, "Ошибка", MB_ICONSTOP);
 		exit(1);
 	}

@@ -3,7 +3,7 @@
 #include <windows.h>
 #include <time.h>
 
-const double pi = 3.14159;
+const double pi = 3.141592653589793;
 
 CRectD::CRectD(double l, double t, double r, double b)
 {

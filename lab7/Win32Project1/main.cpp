@@ -3,6 +3,7 @@
 #include <afxwin.h>
 #include <windows.h>
 #include <fstream>
+#include <stdexcept>
 #include <string>
 #include <vector>
 
@@ -21,7 +22,8 @@ public:
 
 	CMainWin()
 	{
-		Create(NULL, L"Lab07");
+		Create(NULL, L"Lab7");
+		WinRect.SetRect(50, 50, 650, 650);
 		Index = 0;
 		PView.RedimMatrix(3);
 	}
@@ -63,6 +65,9 @@ END_MESSAGE_MAP()
 afx_msg void CMainWin::OnPaint()
 {
 	CPaintDC dc(this);
+	CRect client;
+	GetClientRect(&client);
+	dc.FillSolidRect(client, RGB(255, 255, 255));
 	if (Index == 1) PIR.Draw(dc, PView, WinRect);
 	if (Index == 2) PIR.Draw1(dc, PView, WinRect);
 
@@ -109,14 +114,24 @@ void CMainWin::AngF()
 
 	if (file.is_open()) {
 		while (std::getline(file, line)) {
-
-			lines.push_back(line);
+			if (!line.empty())
+				lines.push_back(line);
 		}
 		file.close();
 	}
-	
-	ang2 = stoi(lines[0]);
-	ang3 = stoi(lines[1]);
+
+	if (lines.size() < 2)
+		return;
+
+	try
+	{
+		ang2 = stoi(lines[0]);
+		ang3 = stoi(lines[1]);
+	}
+	catch (const std::exception&)
+	{
+		return;
+	}
 	PView(1) = ang2;
 	PView(2) = ang3;
 
@@ -136,7 +151,7 @@ void CMainWin::AngD()
 afx_msg void CMainWin::OnSize(UINT nType, int cx, int cy)
 {
 	CWnd::OnSize(nType, cx, cy);
-	WinRect.SetRect(cx * 0.5, -cy * 0.3, cx * 0.9, cy * 0.1);
+	WinRect.SetRect((int)(cx * 0.1), (int)(cy * 0.1), (int)(cx * 0.9), (int)(cy * 0.9));
 }
 
 CMyApp theApp;
