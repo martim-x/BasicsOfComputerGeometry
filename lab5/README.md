@@ -20,22 +20,22 @@
 
 ## Сборка
 
-Открыть `Lab05.sln` в Visual Studio (платформа x64 или Win32, набор инструментов v143),
+Открыть `lab5.sln` в Visual Studio (платформа x64 или Win32, набор инструментов v143),
 конфигурация Debug/Release → F5.
 
 ## Файлы
 
 | Файл | Назначение |
 |---|---|
-| `Lab03/LibBlade.cpp` | матрицы преобразований, `CBlade`: хранение угла, отрисовка |
-| `Lab03/BladeGeometry.cpp` | чистая математика формы лопасти и шага угла (без MFC) |
-| `Lab03/ChildView.cpp` | окно, ползунки, таймер, обработка клика по втулке |
-| `Lab03/Lab03.cpp`, `Lab03/MainFrm.cpp` | каркас MFC-приложения |
+| `LibBlade.cpp` | матрицы преобразований, `CBlade`: хранение угла, отрисовка |
+| `BladeGeometry.cpp` | чистая математика формы лопасти и шага угла (без MFC) |
+| `ChildView.cpp` | окно, ползунки, таймер, обработка клика по втулке |
+| `lab5.cpp`, `MainFrm.cpp` | каркас MFC-приложения |
 | `tests/lab5-blade-geometry-tests.cpp` | тесты формы лопасти и вращения (собираются clang++) |
 
 ## Проверка геометрии
 
 ```bash
-clang++ -std=c++17 -Wall -Wextra -Werror tests/lab5-blade-geometry-tests.cpp lab5/Lab03/BladeGeometry.cpp \
+clang++ -std=c++17 -Wall -Wextra -Werror tests/lab5-blade-geometry-tests.cpp lab5/BladeGeometry.cpp \
   -o /tmp/lab5-tests && /tmp/lab5-tests
 ```

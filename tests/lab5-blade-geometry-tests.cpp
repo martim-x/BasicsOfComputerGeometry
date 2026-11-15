@@ -1,4 +1,4 @@
-#include "../lab5/Lab03/BladeGeometry.h"
+#include "../lab5/BladeGeometry.h"
 
 #include <cassert>
 #include <cmath>

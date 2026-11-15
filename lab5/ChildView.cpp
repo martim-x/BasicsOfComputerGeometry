@@ -2,7 +2,7 @@
 //
 
 #include "stdafx.h"
-#include "Lab03.h"
+#include "lab5.h"
 #include "ChildView.h"
 #include <algorithm>
 
