@@ -1278,17 +1278,17 @@
 							<ml:id xml:space="preserve">α</ml:id>
 						</ml:apply>
 						<ml:apply>
-							<ml:id xml:space="preserve">sin</ml:id>
-							<ml:id xml:space="preserve">α</ml:id>
-						</ml:apply>
-						<ml:real>0</ml:real>
-						<ml:real>0</ml:real>
-						<ml:apply>
 							<ml:neg/>
 							<ml:apply>
 								<ml:id xml:space="preserve">sin</ml:id>
 								<ml:id xml:space="preserve">α</ml:id>
 							</ml:apply>
+						</ml:apply>
+						<ml:real>0</ml:real>
+						<ml:real>0</ml:real>
+						<ml:apply>
+							<ml:id xml:space="preserve">sin</ml:id>
+							<ml:id xml:space="preserve">α</ml:id>
 						</ml:apply>
 						<ml:apply>
 							<ml:id xml:space="preserve">cos</ml:id>
