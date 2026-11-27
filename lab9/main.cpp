@@ -1,0 +1,190 @@
+#include <afxwin.h>
+#include <afxdlgs.h>
+#include <cmath>
+#include <fstream>
+
+#include "CPyramid.h"
+
+namespace {
+
+constexpr UINT ID_DRAW_PYRAMID = 42001;
+constexpr UINT ID_CAMERA_FROM_FILE = 42002;
+constexpr UINT ID_CAMERA_DEFAULT = 42003;
+constexpr UINT ID_LIGHT_FROM_FILE = 42004;
+constexpr UINT ID_LIGHT_DEFAULT = 42005;
+constexpr UINT ID_COLOR_PICKER = 42006;
+
+bool read_spherical(const char* path, double& radius, double& azimuth, double& zenith)
+{
+    std::ifstream input(path);
+    return input.is_open() && static_cast<bool>(input >> radius >> azimuth >> zenith) &&
+           std::isfinite(radius) && std::isfinite(azimuth) && std::isfinite(zenith) &&
+           radius > 0.0 && zenith >= 0.0 && zenith <= 180.0;
+}
+
+void normalize_azimuth(double& azimuth)
+{
+    while (azimuth < 0.0) azimuth += 360.0;
+    while (azimuth >= 360.0) azimuth -= 360.0;
+}
+
+}
+
+class CMainWin final : public CFrameWnd {
+public:
+    CMainWin() : m_camera(10.0, 45.0, 60.0), m_light(100.0, 45.0, 45.0)
+    {
+        Create(nullptr, _T("Лабораторная работа 9 — освещение пирамиды"));
+    }
+
+protected:
+    afx_msg int OnCreate(LPCREATESTRUCT create_struct)
+    {
+        if (CFrameWnd::OnCreate(create_struct) == -1) {
+            return -1;
+        }
+        m_menu.CreateMenu();
+        m_figure_menu.CreatePopupMenu();
+        m_figure_menu.AppendMenu(MF_STRING, ID_DRAW_PYRAMID, _T("Пирамида"));
+        m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_figure_menu.Detach()), _T("Фигура"));
+
+        m_camera_menu.CreatePopupMenu();
+        m_camera_menu.AppendMenu(MF_STRING, ID_CAMERA_FROM_FILE, _T("Положение из camera.txt"));
+        m_camera_menu.AppendMenu(MF_STRING, ID_CAMERA_DEFAULT, _T("По умолчанию"));
+        m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_camera_menu.Detach()), _T("Камера"));
+
+        m_light_menu.CreatePopupMenu();
+        m_light_menu.AppendMenu(MF_STRING, ID_LIGHT_FROM_FILE, _T("Положение из light.txt"));
+        m_light_menu.AppendMenu(MF_STRING, ID_LIGHT_DEFAULT, _T("По умолчанию"));
+        m_light_menu.AppendMenu(MF_STRING, ID_COLOR_PICKER, _T("Цвет источника..."));
+        m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_light_menu.Detach()), _T("Источник света"));
+        SetMenu(&m_menu);
+        return 0;
+    }
+
+    afx_msg void OnPaint()
+    {
+        CPaintDC dc(this);
+        CRect client;
+        GetClientRect(&client);
+        dc.FillSolidRect(client, RGB(255, 255, 255));
+        if (!m_draw_pyramid) {
+            return;
+        }
+        m_pyramid.ColorDraw(dc, m_camera, m_light, client, m_light_color);
+        dc.SetBkMode(TRANSPARENT);
+        CString camera_text;
+        CString light_text;
+        camera_text.Format(_T("Камера: r=%.0f, φ=%.0f°, θ=%.0f°"), m_camera(0), m_camera(1), m_camera(2));
+        light_text.Format(_T("Свет: r=%.0f, φ=%.0f°, θ=%.0f°   RGB=(%u,%u,%u)"),
+                          m_light(0), m_light(1), m_light(2),
+                          static_cast<unsigned>(GetRValue(m_light_color)),
+                          static_cast<unsigned>(GetGValue(m_light_color)),
+                          static_cast<unsigned>(GetBValue(m_light_color)));
+        dc.TextOut(8, 8, camera_text);
+        dc.TextOut(8, 28, light_text);
+    }
+
+    afx_msg void OnSize(UINT type, int cx, int cy)
+    {
+        CFrameWnd::OnSize(type, cx, cy);
+        if (cx > 0 && cy > 0) {
+            Invalidate(FALSE);
+        }
+    }
+
+    afx_msg void OnDrawPyramid()
+    {
+        m_draw_pyramid = true;
+        Invalidate(FALSE);
+    }
+
+    afx_msg void OnCameraFromFile()
+    {
+        double radius = 0.0;
+        double azimuth = 0.0;
+        double zenith = 0.0;
+        if (!read_spherical("camera.txt", radius, azimuth, zenith)) {
+            AfxMessageBox(_T("camera.txt должен содержать r, азимут и зенит; r > 0, 0° ≤ зенит ≤ 180°."), MB_ICONWARNING);
+            return;
+        }
+        normalize_azimuth(azimuth);
+        m_camera = CMatrix(radius, azimuth, zenith);
+        Invalidate(FALSE);
+    }
+
+    afx_msg void OnCameraDefault()
+    {
+        m_camera = CMatrix(10.0, 45.0, 60.0);
+        Invalidate(FALSE);
+    }
+
+    afx_msg void OnLightFromFile()
+    {
+        double radius = 0.0;
+        double azimuth = 0.0;
+        double zenith = 0.0;
+        if (!read_spherical("light.txt", radius, azimuth, zenith)) {
+            AfxMessageBox(_T("light.txt должен содержать r, азимут и зенит; r > 0, 0° ≤ зенит ≤ 180°."), MB_ICONWARNING);
+            return;
+        }
+        normalize_azimuth(azimuth);
+        m_light = CMatrix(radius, azimuth, zenith);
+        Invalidate(FALSE);
+    }
+
+    afx_msg void OnLightDefault()
+    {
+        m_light = CMatrix(100.0, 45.0, 45.0);
+        Invalidate(FALSE);
+    }
+
+    afx_msg void OnColorPicker()
+    {
+        CColorDialog dialog(m_light_color, CC_FULLOPEN);
+        if (dialog.DoModal() == IDOK) {
+            m_light_color = dialog.GetColor();
+            Invalidate(FALSE);
+        }
+    }
+
+    DECLARE_MESSAGE_MAP()
+
+private:
+    CMenu m_menu;
+    CMenu m_figure_menu;
+    CMenu m_camera_menu;
+    CMenu m_light_menu;
+    CPyramid m_pyramid;
+    CMatrix m_camera;
+    CMatrix m_light;
+    COLORREF m_light_color = RGB(255, 255, 255);
+    bool m_draw_pyramid = false;
+};
+
+BEGIN_MESSAGE_MAP(CMainWin, CFrameWnd)
+    ON_WM_CREATE()
+    ON_WM_PAINT()
+    ON_WM_SIZE()
+    ON_COMMAND(ID_DRAW_PYRAMID, &CMainWin::OnDrawPyramid)
+    ON_COMMAND(ID_CAMERA_FROM_FILE, &CMainWin::OnCameraFromFile)
+    ON_COMMAND(ID_CAMERA_DEFAULT, &CMainWin::OnCameraDefault)
+    ON_COMMAND(ID_LIGHT_FROM_FILE, &CMainWin::OnLightFromFile)
+    ON_COMMAND(ID_LIGHT_DEFAULT, &CMainWin::OnLightDefault)
+    ON_COMMAND(ID_COLOR_PICKER, &CMainWin::OnColorPicker)
+END_MESSAGE_MAP()
+
+class CGeometryApp final : public CWinApp {
+public:
+    BOOL InitInstance() override
+    {
+        CWinApp::InitInstance();
+        auto* window = new CMainWin();
+        m_pMainWnd = window;
+        window->ShowWindow(SW_SHOW);
+        window->UpdateWindow();
+        return TRUE;
+    }
+};
+
+CGeometryApp the_app;
