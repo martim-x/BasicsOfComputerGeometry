@@ -46,9 +46,11 @@ protected:
         }
         m_menu.CreateMenu();
         m_figure_menu.CreatePopupMenu();
-        m_figure_menu.AppendMenu(MF_STRING, ID_SPHERE_DIFFUSE, _T("Диффузная модель"));
-        m_figure_menu.AppendMenu(MF_STRING, ID_SPHERE_SPECULAR, _T("Зеркальная модель"));
-        m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_figure_menu.Detach()), _T("Шар"));
+        m_sphere_menu.CreatePopupMenu();
+        m_sphere_menu.AppendMenu(MF_STRING, ID_SPHERE_DIFFUSE, _T("Диффузная модель"));
+        m_sphere_menu.AppendMenu(MF_STRING, ID_SPHERE_SPECULAR, _T("Зеркальная модель"));
+        m_figure_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_sphere_menu.Detach()), _T("Шар"));
+        m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_figure_menu.Detach()), _T("Фигура"));
 
         m_camera_menu.CreatePopupMenu();
         m_camera_menu.AppendMenu(MF_STRING, ID_CAMERA_FROM_FILE, _T("Положение из camera.txt"));
@@ -161,6 +163,7 @@ protected:
 private:
     CMenu m_menu;
     CMenu m_figure_menu;
+    CMenu m_sphere_menu;
     CMenu m_camera_menu;
     CMenu m_light_menu;
     CMatrix m_camera;
