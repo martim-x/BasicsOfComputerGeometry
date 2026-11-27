@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<?validation-md5-digest 19fb8a77332da63f60b094f0135a5d6b?>
+<?validation-md5-digest c77d58b69ad5914de2eb0ab8f65ba995?>
 <worksheet version="3.0.3" xmlns="http://schemas.mathsoft.com/worksheet30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ws="http://schemas.mathsoft.com/worksheet30" xmlns:ml="http://schemas.mathsoft.com/math30" xmlns:u="http://schemas.mathsoft.com/units10" xmlns:p="http://schemas.mathsoft.com/provenance10">
 	<pointReleaseData/>
 	<metadata>
@@ -13,9 +13,9 @@
 			<revisedBy>User-6d4ec851</revisedBy>
 		</userData>
 		<identityInfo>
-			<revision>8</revision>
+			<revision>10</revision>
 			<documentID>21666085-FBBB-4039-BBE2-A87E9CC8E670</documentID>
-			<versionID>8B0BFD45-A047-4DF4-96EE-A11842BCE063</versionID>
+			<versionID>68DF9861-035B-445E-97FB-0778461C7613</versionID>
 			<parentVersionID>00000000-0000-0000-0000-000000000000</parentVersionID>
 			<branchID>00000000-0000-0000-0000-000000000000</branchID>
 		</identityInfo>
@@ -114,12 +114,12 @@
 		</miscellaneous>
 	</settings>
 	<regions>
-		<region region-id="3" left="24" top="14.25" width="205.5" height="22.5" align-x="49.5" align-y="24" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="3" left="24" top="14.25" width="205.5" height="24" align-x="49.5" align-y="24" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Координаты вершин пирамиды A, B, C, A1, B1, C1</p>
 			</text>
 		</region>
-		<region region-id="4" left="48" top="38.25" width="99.75" height="62.25" align-x="60" align-y="72" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="4" left="48" top="38.25" width="93.75" height="62.25" align-x="60" align-y="72" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">P</ml:id>
@@ -153,12 +153,12 @@
 			</math>
 			<rendering item-idref="2"/>
 		</region>
-		<region region-id="7" left="24" top="110.25" width="134.25" height="11.25" align-x="46.5" align-y="120" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="7" left="24" top="110.25" width="138.75" height="12" align-x="46.5" align-y="120" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="false">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Параметры положения камеры</p>
 			</text>
 		</region>
-		<region region-id="23" left="48" top="142.5" width="56.25" height="45.75" align-x="66.75" align-y="168" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="23" left="48" top="142.5" width="52.5" height="45.75" align-x="66" align-y="168" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">PC</ml:id>
@@ -303,12 +303,12 @@
 			</math>
 			<rendering item-idref="4"/>
 		</region>
-		<region region-id="19" left="24" top="200.25" width="199.5" height="11.25" align-x="39.75" align-y="210" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="19" left="24" top="200.25" width="207.75" height="12" align-x="39.75" align-y="210" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="false">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Задание матриц координат вершин пирамиды</p>
 			</text>
 		</region>
-		<region region-id="1581" left="48" top="225" width="114" height="12.75" align-x="61.5" align-y="234" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1581" left="48" top="225" width="109.5" height="12.75" align-x="62.25" align-y="234" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define warning="WarnRedefinedBIUnit" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">A</ml:id>
@@ -326,7 +326,7 @@
 			</math>
 			<rendering item-idref="5"/>
 		</region>
-		<region region-id="66" left="48" top="243" width="114" height="12.75" align-x="61.5" align-y="252" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="66" left="48" top="243" width="108" height="12.75" align-x="60.75" align-y="252" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">B</ml:id>
@@ -344,7 +344,7 @@
 			</math>
 			<rendering item-idref="6"/>
 		</region>
-		<region region-id="67" left="48" top="261" width="114" height="12.75" align-x="61.5" align-y="270" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="67" left="48" top="261" width="108" height="12.75" align-x="60.75" align-y="270" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define warning="WarnRedefinedBIUnit" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">C</ml:id>
@@ -362,7 +362,7 @@
 			</math>
 			<rendering item-idref="7"/>
 		</region>
-		<region region-id="68" left="48" top="279" width="119.25" height="12.75" align-x="66.75" align-y="288" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="68" left="48" top="279" width="114" height="12.75" align-x="66.75" align-y="288" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">A1</ml:id>
@@ -380,7 +380,7 @@
 			</math>
 			<rendering item-idref="8"/>
 		</region>
-		<region region-id="69" left="48" top="297" width="118.5" height="12.75" align-x="66" align-y="306" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="69" left="48" top="297" width="112.5" height="12.75" align-x="65.25" align-y="306" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">B1</ml:id>
@@ -398,7 +398,7 @@
 			</math>
 			<rendering item-idref="9"/>
 		</region>
-		<region region-id="70" left="48" top="315" width="118.5" height="12.75" align-x="66" align-y="324" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="70" left="48" top="315" width="112.5" height="12.75" align-x="65.25" align-y="324" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">C1</ml:id>
@@ -416,12 +416,12 @@
 			</math>
 			<rendering item-idref="10"/>
 		</region>
-		<region region-id="1315" left="24" top="338.25" width="185.25" height="22.5" align-x="50.25" align-y="348" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1315" left="24" top="338.25" width="185.25" height="24" align-x="50.25" align-y="348" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Сферические координаты точки наблюдения</p>
 			</text>
 		</region>
-		<region region-id="1480" left="48" top="375" width="40.5" height="18" align-x="63.75" align-y="384" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1480" left="48" top="375" width="39.75" height="18" align-x="63.75" align-y="384" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="v">r</ml:id>
@@ -434,7 +434,7 @@
 			</math>
 			<rendering item-idref="11"/>
 		</region>
-		<region region-id="1481" left="108" top="363" width="56.25" height="33" align-x="126.75" align-y="384" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1481" left="108" top="363" width="55.5" height="33" align-x="126.75" align-y="384" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="v">ϕ</ml:id>
@@ -455,7 +455,7 @@
 			</math>
 			<rendering item-idref="12"/>
 		</region>
-		<region region-id="1482" left="186" top="363" width="54.75" height="33" align-x="203.25" align-y="384" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1482" left="186" top="363" width="54" height="33" align-x="203.25" align-y="384" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="v">θ</ml:id>
@@ -476,7 +476,7 @@
 			</math>
 			<rendering item-idref="13"/>
 		</region>
-		<region region-id="1584" left="24" top="416.25" width="288" height="11.25" align-x="38.25" align-y="426" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1584" left="24" top="416.25" width="288" height="12" align-x="38.25" align-y="426" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<f size="10">
@@ -485,12 +485,12 @@
 				</p>
 			</text>
 		</region>
-		<region region-id="1320" left="24" top="446.25" width="348" height="11.25" align-x="24" align-y="456" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1320" left="24" top="446.25" width="348" height="12" align-x="24" align-y="456" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="0" text-align="inherit" list-style-type="none" tabs="inherit">Угол между осью z и вектором нормали к секущей плоскости</p>
 			</text>
 		</region>
-		<region region-id="1483" left="48" top="477" width="44.25" height="16.5" align-x="78.75" align-y="486" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1483" left="48" top="477" width="45" height="16.5" align-x="80.25" align-y="486" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="grad">ϕ</ml:id>
@@ -499,7 +499,7 @@
 			</math>
 			<rendering item-idref="14"/>
 		</region>
-		<region region-id="1484" left="108" top="466.5" width="58.5" height="31.5" align-x="121.5" align-y="486" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1484" left="108" top="466.5" width="60" height="31.5" align-x="121.5" align-y="486" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">ϕ</ml:id>
@@ -516,7 +516,7 @@
 			</math>
 			<rendering item-idref="15"/>
 		</region>
-		<region region-id="1323" left="24" top="506.25" width="174.75" height="11.25" align-x="37.5" align-y="516" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1323" left="24" top="506.25" width="174.75" height="12" align-x="37.5" align-y="516" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Вектор нормали к секущей плоскости</p>
 			</text>
@@ -524,10 +524,10 @@
 		<region region-id="1638" left="48" top="531.75" width="110.25" height="18" align-x="62.25" align-y="546" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612604" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736421436" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612164" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736422116" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -566,10 +566,10 @@
 		<region region-id="1486" left="48" top="591" width="27.75" height="16.5" align-x="63" align-y="600" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="3C91956F-0D3F-45B8-B209-6A4282C5C2CF" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356610684" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="3C91956F-0D3F-45B8-B209-6A4282C5C2CF" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736424476" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612164" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736422116" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -590,10 +590,10 @@
 		<region region-id="1487" left="102" top="591" width="29.25" height="16.5" align-x="118.5" align-y="600" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="3C91956F-0D3F-45B8-B209-6A4282C5C2CF" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356610804" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="3C91956F-0D3F-45B8-B209-6A4282C5C2CF" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736423836" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356610644" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736424836" is-modified="false" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -611,7 +611,7 @@
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1488" left="150" top="584.25" width="65.25" height="27.75" align-x="165.75" align-y="600" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1488" left="150" top="584.25" width="62.25" height="27.75" align-x="165" align-y="600" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="0">z</ml:id>
@@ -638,14 +638,14 @@
 			</math>
 			<rendering item-idref="19"/>
 		</region>
-		<region region-id="1329" left="24" top="626.25" width="249" height="11.25" align-x="35.25" align-y="636" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1329" left="24" top="626.25" width="249" height="12" align-x="35.25" align-y="636" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Задаем параметры уравнения секущей плоскости</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1489" left="48" top="651" width="134.25" height="18" align-x="61.5" align-y="660" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1489" left="48" top="651" width="129.75" height="18" align-x="61.5" align-y="660" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">D</ml:id>
@@ -691,14 +691,14 @@
 			</math>
 			<rendering item-idref="20"/>
 		</region>
-		<region region-id="1331" left="24" top="686.25" width="341.25" height="11.25" align-x="42" align-y="696" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1331" left="24" top="686.25" width="341.25" height="12" align-x="42" align-y="696" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Находим точку пересечения P1 секущей плоскости с ребром CС1</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1490" left="48" top="717" width="33" height="12.75" align-x="66" align-y="726" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1490" left="48" top="717" width="31.5" height="12.75" align-x="65.25" align-y="726" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">V1</ml:id>
@@ -707,7 +707,7 @@
 			</math>
 			<rendering item-idref="21"/>
 		</region>
-		<region region-id="1491" left="102" top="717" width="37.5" height="12.75" align-x="120" align-y="726" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1491" left="102" top="717" width="36" height="12.75" align-x="119.25" align-y="726" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">V2</ml:id>
@@ -716,13 +716,13 @@
 			</math>
 			<rendering item-idref="22"/>
 		</region>
-		<region region-id="1492" left="48" top="741" width="65.25" height="12.75" align-x="70.5" align-y="750" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1492" left="48" top="741" width="62.25" height="12.75" align-x="69" align-y="750" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736422116" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356610684" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736424476" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -740,11 +740,11 @@
 			</math>
 			<rendering item-idref="23">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="63.75" height="11.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="60.75" height="11.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1493" left="48" top="764.25" width="96" height="27.75" align-x="75" align-y="780" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1493" left="48" top="764.25" width="93" height="27.75" align-x="74.25" align-y="780" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="CC1">t</ml:id>
@@ -774,7 +774,7 @@
 			</math>
 			<rendering item-idref="24"/>
 		</region>
-		<region region-id="1494" left="48" top="807" width="98.25" height="16.5" align-x="75.75" align-y="816" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1494" left="48" top="807" width="93.75" height="16.5" align-x="74.25" align-y="816" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">Vсс1</ml:id>
@@ -791,12 +791,12 @@
 			</math>
 			<rendering item-idref="25"/>
 		</region>
-		<region region-id="1337" left="48" top="836.25" width="112.5" height="11.25" align-x="72.75" align-y="846" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1337" left="48" top="836.25" width="112.5" height="12" align-x="72.75" align-y="846" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">координаты точки P1</p>
 			</text>
 		</region>
-		<region region-id="1495" left="48" top="861" width="63.75" height="18" align-x="78" align-y="870" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1495" left="48" top="861" width="59.25" height="18" align-x="75" align-y="870" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="CC1">x</ml:id>
@@ -809,7 +809,7 @@
 			</math>
 			<rendering item-idref="26"/>
 		</region>
-		<region region-id="1496" left="48" top="885" width="63" height="18" align-x="77.25" align-y="894" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1496" left="48" top="885" width="60.75" height="18" align-x="76.5" align-y="894" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="CC1">y</ml:id>
@@ -822,7 +822,7 @@
 			</math>
 			<rendering item-idref="27"/>
 		</region>
-		<region region-id="1497" left="48" top="909" width="62.25" height="18" align-x="76.5" align-y="918" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1497" left="48" top="909" width="59.25" height="18" align-x="75" align-y="918" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="CC1">z</ml:id>
@@ -835,14 +835,14 @@
 			</math>
 			<rendering item-idref="28"/>
 		</region>
-		<region region-id="1341" left="24" top="944.25" width="354.75" height="11.25" align-x="42" align-y="954" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1341" left="24" top="944.25" width="354.75" height="12" align-x="42" align-y="954" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Находим точку пересечения P2 секущей плоскости с ребром AA1</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1498" left="48" top="975" width="33" height="12.75" align-x="66" align-y="984" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1498" left="48" top="975" width="33" height="12.75" align-x="65.25" align-y="984" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">V1</ml:id>
@@ -851,7 +851,7 @@
 			</math>
 			<rendering item-idref="29"/>
 		</region>
-		<region region-id="1499" left="102" top="975" width="38.25" height="12.75" align-x="120" align-y="984" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1499" left="102" top="975" width="37.5" height="12.75" align-x="119.25" align-y="984" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">V2</ml:id>
@@ -860,13 +860,13 @@
 			</math>
 			<rendering item-idref="30"/>
 		</region>
-		<region region-id="1500" left="48" top="999" width="65.25" height="12.75" align-x="70.5" align-y="1008" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1500" left="48" top="999" width="62.25" height="12.75" align-x="69" align-y="1008" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611604" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736421916" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736423356" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -884,11 +884,11 @@
 			</math>
 			<rendering item-idref="31">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="63.75" height="11.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="60.75" height="11.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1501" left="48" top="1022.25" width="96.75" height="27.75" align-x="75.75" align-y="1038" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1501" left="48" top="1022.25" width="96" height="27.75" align-x="77.25" align-y="1038" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="AA1">t</ml:id>
@@ -918,7 +918,7 @@
 			</math>
 			<rendering item-idref="32"/>
 		</region>
-		<region region-id="1502" left="48" top="1065" width="98.25" height="16.5" align-x="75" align-y="1074" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1502" left="48" top="1065" width="96.75" height="16.5" align-x="74.25" align-y="1074" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">Vaa1</ml:id>
@@ -935,12 +935,12 @@
 			</math>
 			<rendering item-idref="33"/>
 		</region>
-		<region region-id="1347" left="48" top="1094.25" width="112.5" height="11.25" align-x="72.75" align-y="1104" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1347" left="48" top="1094.25" width="112.5" height="12" align-x="72.75" align-y="1104" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">координаты точки P2</p>
 			</text>
 		</region>
-		<region region-id="1503" left="48" top="1119" width="63.75" height="18" align-x="78.75" align-y="1128" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1503" left="48" top="1119" width="62.25" height="18" align-x="78" align-y="1128" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="AA1">x</ml:id>
@@ -953,7 +953,7 @@
 			</math>
 			<rendering item-idref="34"/>
 		</region>
-		<region region-id="1504" left="48" top="1143" width="63" height="18" align-x="78" align-y="1152" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1504" left="48" top="1143" width="63.75" height="18" align-x="79.5" align-y="1152" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="AA1">y</ml:id>
@@ -966,7 +966,7 @@
 			</math>
 			<rendering item-idref="35"/>
 		</region>
-		<region region-id="1505" left="48" top="1167" width="62.25" height="18" align-x="77.25" align-y="1176" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1505" left="48" top="1167" width="62.25" height="18" align-x="78" align-y="1176" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="AA1">z</ml:id>
@@ -979,14 +979,14 @@
 			</math>
 			<rendering item-idref="36"/>
 		</region>
-		<region region-id="1351" left="24" top="1202.25" width="354.75" height="11.25" align-x="42" align-y="1212" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1351" left="24" top="1202.25" width="354.75" height="12" align-x="42" align-y="1212" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Находим точку пересечения P3 секущей плоскости с ребром BB1</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1506" left="48" top="1233" width="33" height="12.75" align-x="66" align-y="1242" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1506" left="48" top="1233" width="31.5" height="12.75" align-x="65.25" align-y="1242" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">V1</ml:id>
@@ -995,7 +995,7 @@
 			</math>
 			<rendering item-idref="37"/>
 		</region>
-		<region region-id="1507" left="102" top="1233" width="37.5" height="12.75" align-x="120" align-y="1242" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1507" left="102" top="1233" width="36" height="12.75" align-x="119.25" align-y="1242" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">V2</ml:id>
@@ -1004,13 +1004,13 @@
 			</math>
 			<rendering item-idref="38"/>
 		</region>
-		<region region-id="1508" left="48" top="1257" width="65.25" height="12.75" align-x="70.5" align-y="1266" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1508" left="48" top="1257" width="62.25" height="12.75" align-x="69" align-y="1266" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611364" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736424836" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611284" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736424476" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1028,11 +1028,11 @@
 			</math>
 			<rendering item-idref="39">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="63.75" height="11.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="60.75" height="11.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1509" left="48" top="1280.25" width="96" height="27.75" align-x="75" align-y="1296" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1509" left="48" top="1280.25" width="93" height="27.75" align-x="74.25" align-y="1296" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="BB1">t</ml:id>
@@ -1062,7 +1062,7 @@
 			</math>
 			<rendering item-idref="40"/>
 		</region>
-		<region region-id="1510" left="48" top="1323" width="99" height="16.5" align-x="76.5" align-y="1332" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1510" left="48" top="1323" width="95.25" height="16.5" align-x="75.75" align-y="1332" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">Vbb1</ml:id>
@@ -1079,12 +1079,12 @@
 			</math>
 			<rendering item-idref="41"/>
 		</region>
-		<region region-id="1357" left="48" top="1352.25" width="112.5" height="11.25" align-x="72.75" align-y="1362" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1357" left="48" top="1352.25" width="112.5" height="12" align-x="72.75" align-y="1362" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">координаты точки P3</p>
 			</text>
 		</region>
-		<region region-id="1511" left="48" top="1377" width="64.5" height="18" align-x="78" align-y="1386" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1511" left="48" top="1377" width="60.75" height="18" align-x="75" align-y="1386" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="BB1">x</ml:id>
@@ -1097,7 +1097,7 @@
 			</math>
 			<rendering item-idref="42"/>
 		</region>
-		<region region-id="1512" left="48" top="1401" width="63.75" height="18" align-x="77.25" align-y="1410" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1512" left="48" top="1401" width="62.25" height="18" align-x="76.5" align-y="1410" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="BB1">y</ml:id>
@@ -1110,7 +1110,7 @@
 			</math>
 			<rendering item-idref="43"/>
 		</region>
-		<region region-id="1513" left="48" top="1425" width="63" height="18" align-x="76.5" align-y="1434" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1513" left="48" top="1425" width="60.75" height="18" align-x="75" align-y="1434" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="BB1">z</ml:id>
@@ -1123,14 +1123,14 @@
 			</math>
 			<rendering item-idref="44"/>
 		</region>
-		<region region-id="1361" left="24" top="1460.25" width="298.5" height="11.25" align-x="45" align-y="1470" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1361" left="24" top="1460.25" width="298.5" height="12" align-x="45" align-y="1470" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Матрица мировых коорднат точек P1, P2, P3 (сечение)</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1514" left="36" top="1485" width="126" height="73.5" align-x="55.5" align-y="1524" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1514" left="36" top="1485" width="122.25" height="73.5" align-x="55.5" align-y="1524" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">TR</ml:id>
@@ -1152,14 +1152,14 @@
 			</math>
 			<rendering item-idref="45"/>
 		</region>
-		<region region-id="1363" left="24" top="1568.25" width="310.5" height="11.25" align-x="49.5" align-y="1578" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1363" left="24" top="1568.25" width="310.5" height="12" align-x="49.5" align-y="1578" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Формируем матрицу пересчёта мировых координат в видовые</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1646" left="432" top="1623" width="48.75" height="12.75" align-x="445.5" align-y="1632" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1646" left="432" top="1623" width="48" height="12.75" align-x="444.75" align-y="1632" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">α</ml:id>
@@ -1172,7 +1172,7 @@
 			</math>
 			<rendering item-idref="46"/>
 		</region>
-		<region region-id="1515" left="42" top="1599" width="273" height="73.5" align-x="75.75" align-y="1638" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1515" left="42" top="1599" width="266.25" height="73.5" align-x="74.25" align-y="1638" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="view">K</ml:id>
@@ -1268,7 +1268,7 @@
 			</math>
 			<rendering item-idref="47"/>
 		</region>
-		<region region-id="1645" left="426" top="1658.25" width="132" height="62.25" align-x="443.25" align-y="1692" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1645" left="426" top="1658.25" width="125.25" height="62.25" align-x="442.5" align-y="1692" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">Rz</ml:id>
@@ -1278,17 +1278,17 @@
 							<ml:id xml:space="preserve">α</ml:id>
 						</ml:apply>
 						<ml:apply>
+							<ml:id xml:space="preserve">sin</ml:id>
+							<ml:id xml:space="preserve">α</ml:id>
+						</ml:apply>
+						<ml:real>0</ml:real>
+						<ml:real>0</ml:real>
+						<ml:apply>
 							<ml:neg/>
 							<ml:apply>
 								<ml:id xml:space="preserve">sin</ml:id>
 								<ml:id xml:space="preserve">α</ml:id>
 							</ml:apply>
-						</ml:apply>
-						<ml:real>0</ml:real>
-						<ml:real>0</ml:real>
-						<ml:apply>
-							<ml:id xml:space="preserve">sin</ml:id>
-							<ml:id xml:space="preserve">α</ml:id>
 						</ml:apply>
 						<ml:apply>
 							<ml:id xml:space="preserve">cos</ml:id>
@@ -1309,14 +1309,14 @@
 			</math>
 			<rendering item-idref="48"/>
 		</region>
-		<region region-id="1365" left="24" top="1688.25" width="360" height="11.25" align-x="24" align-y="1698" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1365" left="24" top="1688.25" width="360" height="12" align-x="24" align-y="1698" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Вычисляем координаты вершин пирамиды в ВСК</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1516" left="42" top="1731" width="90.75" height="16.5" align-x="75.75" align-y="1740" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1516" left="42" top="1731" width="87" height="16.5" align-x="74.25" align-y="1740" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">PIR_V</ml:id>
@@ -1333,14 +1333,14 @@
 			</math>
 			<rendering item-idref="49"/>
 		</region>
-		<region region-id="1599" left="24" top="1784.25" width="375" height="11.25" align-x="24" align-y="1794" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1599" left="24" top="1784.25" width="375" height="12" align-x="24" align-y="1794" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="0" margin-right="0" text-indent="inherit" text-align="left" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Вычисляем координаты вершин треугольника сечения Р1, Р2, Р3 в ВСК</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1602" left="426" top="1760.25" width="226.5" height="62.25" align-x="458.25" align-y="1794" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1602" left="426" top="1760.25" width="211.5" height="62.25" align-x="456.75" align-y="1794" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">PIR_V</ml:id>
@@ -1376,7 +1376,7 @@
 			</math>
 			<rendering item-idref="50"/>
 		</region>
-		<region region-id="1517" left="42" top="1827" width="96" height="16.5" align-x="73.5" align-y="1836" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1517" left="42" top="1827" width="92.25" height="16.5" align-x="72" align-y="1836" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">TR_V</ml:id>
@@ -1393,19 +1393,19 @@
 			</math>
 			<rendering item-idref="51"/>
 		</region>
-		<region region-id="1596" left="426" top="1862.25" width="243" height="22.5" align-x="426" align-y="1872" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1596" left="426" top="1862.25" width="243" height="24" align-x="426" align-y="1872" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Она является воображаемой плоскостью, на которой фиксируется изображение объектов.</p>
 			</text>
 		</region>
-		<region region-id="1369" left="24" top="1868.25" width="360" height="22.5" align-x="24" align-y="1878" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1369" left="24" top="1868.25" width="360" height="24" align-x="24" align-y="1878" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Определяем координаты проекции вершин пирамиды на картинную плоскость (без координат по Z)</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1518" left="42" top="1901.25" width="246" height="32.25" align-x="68.25" align-y="1926" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1518" left="42" top="1901.25" width="235.5" height="32.25" align-x="66.75" align-y="1926" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="XY">P</ml:id>
@@ -1457,7 +1457,7 @@
 			</math>
 			<rendering item-idref="52"/>
 		</region>
-		<region region-id="1589" left="432" top="1900.5" width="214.5" height="45.75" align-x="456.75" align-y="1926" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1589" left="432" top="1900.5" width="199.5" height="45.75" align-x="455.25" align-y="1926" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="XY">P</ml:id>
@@ -1487,14 +1487,14 @@
 			</math>
 			<rendering item-idref="53"/>
 		</region>
-		<region region-id="1371" left="24" top="1946.25" width="387" height="22.5" align-x="24" align-y="1956" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1371" left="24" top="1946.25" width="387" height="24" align-x="24" align-y="1956" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="0" margin-right="0" text-indent="inherit" text-align="left" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Определяем координаты проекции вершин треугольника сечения Р1, Р2, Р3 на картинную плоскость (без координат по Z)</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1591" left="42" top="1979.25" width="246.75" height="32.25" align-x="75.75" align-y="2004" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1591" left="42" top="1979.25" width="235.5" height="32.25" align-x="73.5" align-y="2004" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="XY">TR</ml:id>
@@ -1546,7 +1546,7 @@
 			</math>
 			<rendering item-idref="54"/>
 		</region>
-		<region region-id="1592" left="438" top="1984.5" width="146.25" height="45.75" align-x="470.25" align-y="2010" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1592" left="438" top="1984.5" width="135.75" height="45.75" align-x="468" align-y="2010" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="XY">TR</ml:id>
@@ -1567,21 +1567,21 @@
 			</math>
 			<rendering item-idref="55"/>
 		</region>
-		<region region-id="1373" left="24" top="2030.25" width="429" height="11.25" align-x="24" align-y="2040" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1373" left="24" top="2030.25" width="429" height="12" align-x="24" align-y="2040" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Определяем область проекции пирамиды на картинную плоскость XY ВСК</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1374" left="42" top="2060.25" width="109.5" height="11.25" align-x="42" align-y="2070" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1374" left="42" top="2060.25" width="109.5" height="12" align-x="42" align-y="2070" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Левый верхний угол</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1520" left="42" top="2086.5" width="96.75" height="27" align-x="59.25" align-y="2106" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1520" left="42" top="2086.5" width="90.75" height="27" align-x="57.75" align-y="2106" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="L">x</ml:id>
@@ -1602,7 +1602,7 @@
 			</math>
 			<rendering item-idref="56"/>
 		</region>
-		<region region-id="1521" left="156" top="2086.5" width="99.75" height="27" align-x="174" align-y="2106" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1521" left="156" top="2086.5" width="94.5" height="27" align-x="174.75" align-y="2106" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="H">y</ml:id>
@@ -1623,14 +1623,14 @@
 			</math>
 			<rendering item-idref="57"/>
 		</region>
-		<region region-id="1522" left="42" top="2121" width="57" height="16.5" align-x="57.75" align-y="2130" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1522" left="42" top="2121" width="53.25" height="16.5" align-x="56.25" align-y="2130" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623542876" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623545196" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1645,18 +1645,18 @@
 			</math>
 			<rendering item-idref="58">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="9.75" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="8.25" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1523" left="156" top="2121" width="52.5" height="16.5" align-x="172.5" align-y="2130" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1523" left="156" top="2121" width="51" height="16.5" align-x="173.25" align-y="2130" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623545196" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611124" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1671,18 +1671,18 @@
 			</math>
 			<rendering item-idref="59">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="10.5" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="11.25" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1379" left="42" top="2156.25" width="111" height="11.25" align-x="42" align-y="2166" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1379" left="42" top="2156.25" width="111" height="12" align-x="42" align-y="2166" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="true">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">
 					<inlineAttr font-weight="normal">Правый нижний угол</inlineAttr>
 				</p>
 			</text>
 		</region>
-		<region region-id="1524" left="42" top="2176.5" width="100.5" height="27" align-x="60.75" align-y="2196" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1524" left="42" top="2176.5" width="93" height="27" align-x="59.25" align-y="2196" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="H">x</ml:id>
@@ -1703,7 +1703,7 @@
 			</math>
 			<rendering item-idref="60"/>
 		</region>
-		<region region-id="1525" left="156" top="2176.5" width="96" height="27" align-x="172.5" align-y="2196" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1525" left="156" top="2176.5" width="92.25" height="27" align-x="173.25" align-y="2196" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="L">y</ml:id>
@@ -1728,10 +1728,10 @@
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623542876" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611364" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623547396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1754,10 +1754,10 @@
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:provenance expr-id="1">
-						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611364" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623547396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</originRef>
-						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356610644" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+						<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623546356" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 							<hash/>
 						</parentRef>
 						<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1784,10 +1784,10 @@
 		<region region-id="1528" left="42" top="2271" width="47.25" height="16.5" align-x="67.5" align-y="2280" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611364" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623547396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611204" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1808,10 +1808,10 @@
 		<region region-id="1529" left="126" top="2271" width="48.75" height="16.5" align-x="153" align-y="2280" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623542876" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611444" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623539396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1832,10 +1832,10 @@
 		<region region-id="1530" left="42" top="2295" width="48.75" height="16.5" align-x="69" align-y="2304" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611364" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623547396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611204" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1856,10 +1856,10 @@
 		<region region-id="1531" left="126" top="2295" width="50.25" height="16.5" align-x="154.5" align-y="2304" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623542876" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611444" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623539396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1887,10 +1887,10 @@
 		<region region-id="1532" left="42" top="2373" width="87.75" height="16.5" align-x="70.5" align-y="2382" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611204" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611444" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623539396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1912,13 +1912,13 @@
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1533" left="192" top="2373" width="63" height="16.5" align-x="212.25" align-y="2382" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1533" left="192" top="2373" width="58.5" height="16.5" align-x="210.75" align-y="2382" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611204" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611364" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623547396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1936,17 +1936,17 @@
 			</math>
 			<rendering item-idref="69">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="61.5" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="57" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
 		<region region-id="1534" left="42" top="2397" width="92.25" height="16.5" align-x="72" align-y="2406" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611204" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611244" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623545596" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1968,13 +1968,13 @@
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1535" left="192" top="2397" width="60.75" height="16.5" align-x="211.5" align-y="2406" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1535" left="192" top="2397" width="63" height="16.5" align-x="212.25" align-y="2406" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611204" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611044" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623546356" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -1992,17 +1992,17 @@
 			</math>
 			<rendering item-idref="71">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="59.25" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="61.5" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1536" left="42" top="2422.5" width="49.5" height="31.5" align-x="58.5" align-y="2442" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1536" left="42" top="2422.5" width="48" height="31.5" align-x="57" align-y="2442" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611204" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623542876" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2020,17 +2020,17 @@
 			</math>
 			<rendering item-idref="72">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="48" height="30" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="46.5" height="30" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1537" left="192" top="2422.5" width="48.75" height="31.5" align-x="207.75" align-y="2442" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1537" left="192" top="2422.5" width="51" height="31.5" align-x="208.5" align-y="2442" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611204" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611444" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623539396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2048,7 +2048,7 @@
 			</math>
 			<rendering item-idref="73">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="47.25" height="30" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="49.5" height="30" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
@@ -2059,13 +2059,13 @@
 				</p>
 			</text>
 		</region>
-		<region region-id="1538" left="42" top="2496.75" width="141.75" height="53.25" align-x="69" align-y="2526" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1538" left="42" top="2496.75" width="142.5" height="53.25" align-x="69.75" align-y="2526" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611364" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623547396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623542876" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2108,7 +2108,7 @@
 			</math>
 			<rendering item-idref="74">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="140.25" height="51.75" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="141" height="51.75" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
@@ -2302,13 +2302,13 @@
 				</p>
 			</text>
 		</region>
-		<region region-id="1539" left="42" top="2595" width="75" height="16.5" align-x="66" align-y="2604" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1539" left="42" top="2595" width="75.75" height="16.5" align-x="67.5" align-y="2604" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612924" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="622522676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611244" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623545596" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2326,11 +2326,11 @@
 			</math>
 			<rendering item-idref="76">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="73.5" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="74.25" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1540" left="42" top="2622.75" width="187.5" height="53.25" align-x="172.5" align-y="2652" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1540" left="42" top="2622.75" width="186.75" height="53.25" align-x="168.75" align-y="2652" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:matrix rows="3" cols="6">
@@ -2371,13 +2371,13 @@
 				</p>
 			</text>
 		</region>
-		<region region-id="1541" left="42" top="2715.75" width="264" height="21.75" align-x="55.5" align-y="2730" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1541" left="42" top="2715.75" width="240" height="21.75" align-x="55.5" align-y="2730" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611524" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541236" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356610884" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="622522236" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2407,17 +2407,17 @@
 			</math>
 			<rendering item-idref="78">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="262.5" height="20.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="238.5" height="20.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1542" left="42" top="2745.75" width="255" height="21.75" align-x="55.5" align-y="2760" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1542" left="42" top="2745.75" width="257.25" height="21.75" align-x="54.75" align-y="2760" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356610604" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623539756" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623539396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2447,7 +2447,7 @@
 			</math>
 			<rendering item-idref="79">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="253.5" height="20.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="255.75" height="20.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
@@ -2458,13 +2458,13 @@
 				</p>
 			</text>
 		</region>
-		<region region-id="1543" left="42" top="2811" width="87" height="16.5" align-x="70.5" align-y="2820" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1543" left="42" top="2811" width="85.5" height="16.5" align-x="70.5" align-y="2820" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="DF8E5F1C-F24F-46A6-9CAF-BFE8710E42DC" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612484" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="76804E8E-4D18-43B2-9711-FC355001B89A" version-id="DF8E5F1C-F24F-46A6-9CAF-BFE8710E42DC" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541236" is-modified="true" region-id="0" href="D:\4SEMESTR\КГиГ+\Lab_4.1\5.5_СЕЧЕНИЕ.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612084" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541876" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2482,7 +2482,7 @@
 			</math>
 			<rendering item-idref="80">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="85.5" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="84" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
@@ -2507,7 +2507,7 @@
 			</math>
 			<rendering item-idref="81"/>
 		</region>
-		<region region-id="1544" left="42" top="2838.75" width="141" height="53.25" align-x="121.5" align-y="2868" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1544" left="42" top="2838.75" width="141" height="53.25" align-x="120" align-y="2868" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define warning="WarnRedefinedUDScalar" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:matrix rows="3" cols="3">
@@ -2570,13 +2570,13 @@
 				</p>
 			</text>
 		</region>
-		<region region-id="1545" left="42" top="2937.75" width="125.25" height="21.75" align-x="62.25" align-y="2952" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1545" left="42" top="2937.75" width="117" height="21.75" align-x="61.5" align-y="2952" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612644" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541236" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611724" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541516" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2598,17 +2598,17 @@
 			</math>
 			<rendering item-idref="84">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="123.75" height="20.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="115.5" height="20.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1546" left="186" top="2937.75" width="122.25" height="21.75" align-x="206.25" align-y="2952" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1546" left="186" top="2937.75" width="122.25" height="21.75" align-x="204.75" align-y="2952" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612324" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623540916" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612004" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623540836" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2645,47 +2645,46 @@
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve" subscript="C">R</ml:id>
-					<ml:apply>
-						<ml:mult/>
+					<ml:matrix rows="3" cols="1">
 						<ml:apply>
-							<ml:transpose/>
-							<ml:apply>
-								<ml:id xml:space="preserve">submatrix</ml:id>
-								<ml:sequence>
-									<ml:id xml:space="preserve">Rz</ml:id>
-									<ml:real>0</ml:real>
-									<ml:real>2</ml:real>
-									<ml:real>0</ml:real>
-									<ml:real>2</ml:real>
-								</ml:sequence>
-							</ml:apply>
-						</ml:apply>
-						<ml:matrix rows="3" cols="1">
-							<ml:apply>
-								<ml:mult/>
-								<ml:apply>
-									<ml:mult/>
-									<ml:id xml:space="preserve" subscript="v">r</ml:id>
-									<ml:apply><ml:id xml:space="preserve">sin</ml:id><ml:id xml:space="preserve" subscript="v">θ</ml:id></ml:apply>
-								</ml:apply>
-								<ml:apply><ml:id xml:space="preserve">cos</ml:id><ml:id xml:space="preserve" subscript="v">ϕ</ml:id></ml:apply>
-							</ml:apply>
-							<ml:apply>
-								<ml:mult/>
-								<ml:apply>
-									<ml:mult/>
-									<ml:id xml:space="preserve" subscript="v">r</ml:id>
-									<ml:apply><ml:id xml:space="preserve">sin</ml:id><ml:id xml:space="preserve" subscript="v">θ</ml:id></ml:apply>
-								</ml:apply>
-								<ml:apply><ml:id xml:space="preserve">sin</ml:id><ml:id xml:space="preserve" subscript="v">ϕ</ml:id></ml:apply>
-							</ml:apply>
+							<ml:mult/>
 							<ml:apply>
 								<ml:mult/>
 								<ml:id xml:space="preserve" subscript="v">r</ml:id>
-								<ml:apply><ml:id xml:space="preserve">cos</ml:id><ml:id xml:space="preserve" subscript="v">θ</ml:id></ml:apply>
+								<ml:apply>
+									<ml:id xml:space="preserve">sin</ml:id>
+									<ml:id xml:space="preserve" subscript="v">θ</ml:id>
+								</ml:apply>
 							</ml:apply>
-						</ml:matrix>
-					</ml:apply>
+							<ml:apply>
+								<ml:id xml:space="preserve">cos</ml:id>
+								<ml:id xml:space="preserve" subscript="v">ϕ</ml:id>
+							</ml:apply>
+						</ml:apply>
+						<ml:apply>
+							<ml:mult/>
+							<ml:apply>
+								<ml:mult/>
+								<ml:id xml:space="preserve" subscript="v">r</ml:id>
+								<ml:apply>
+									<ml:id xml:space="preserve">sin</ml:id>
+									<ml:id xml:space="preserve" subscript="v">θ</ml:id>
+								</ml:apply>
+							</ml:apply>
+							<ml:apply>
+								<ml:id xml:space="preserve">sin</ml:id>
+								<ml:id xml:space="preserve" subscript="v">ϕ</ml:id>
+							</ml:apply>
+						</ml:apply>
+						<ml:apply>
+							<ml:mult/>
+							<ml:id xml:space="preserve" subscript="v">r</ml:id>
+							<ml:apply>
+								<ml:id xml:space="preserve">cos</ml:id>
+								<ml:id xml:space="preserve" subscript="v">θ</ml:id>
+							</ml:apply>
+						</ml:apply>
+					</ml:matrix>
 				</ml:define>
 			</math>
 			<rendering item-idref="86"/>
@@ -2700,15 +2699,15 @@
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">График без удаления граней</p>
 			</text>
 		</region>
-		<region region-id="1548" left="42" top="3108" width="249" height="237.75" align-x="42" align-y="3108" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1548" left="42" top="3108" width="246.75" height="237.75" align-x="42" align-y="3108" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<plot disable-calc="false" item-idref="87"/>
 			<rendering item-idref="88"/>
 		</region>
-		<region region-id="1549" left="312" top="3108" width="249" height="237.75" align-x="312" align-y="3108" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1549" left="312" top="3108" width="246.75" height="237.75" align-x="312" align-y="3108" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<plot disable-calc="false" item-idref="89"/>
 			<rendering item-idref="90"/>
 		</region>
-		<region region-id="1636" left="636" top="3156" width="165" height="129.75" align-x="636" align-y="3156" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1636" left="636" top="3156" width="162.75" height="129.75" align-x="636" align-y="3156" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<plot disable-calc="false" item-idref="91"/>
 			<rendering item-idref="92"/>
 		</region>
@@ -2816,10 +2815,10 @@
 		<region region-id="1552" left="42" top="3537" width="102.75" height="16.5" align-x="92.25" align-y="3546" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612084" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541276" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612684" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541196" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2934,10 +2933,10 @@
 		<region region-id="1555" left="42" top="3729" width="111.75" height="16.5" align-x="89.25" align-y="3738" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612284" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541276" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612084" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541236" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -2947,8 +2946,8 @@
 						<ml:id xml:space="preserve" subscript="A1B1C1">N</ml:id>
 						<ml:apply>
 							<ml:crossProduct/>
-							<ml:id xml:space="preserve">A1C1</ml:id>
 							<ml:id xml:space="preserve">A1B1</ml:id>
+							<ml:id xml:space="preserve">A1C1</ml:id>
 						</ml:apply>
 					</ml:define>
 				</ml:provenance>
@@ -3052,10 +3051,10 @@
 		<region region-id="1558" left="42" top="3903" width="80.25" height="16.5" align-x="75.75" align-y="3912" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612644" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541276" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612124" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541196" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3080,10 +3079,10 @@
 		<region region-id="1559" left="42" top="3945" width="102.75" height="16.5" align-x="92.25" align-y="3954" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612644" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541276" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612284" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541316" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3198,10 +3197,10 @@
 		<region region-id="1562" left="42" top="4137" width="95.25" height="16.5" align-x="89.25" align-y="4146" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612524" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541436" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611804" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541276" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3231,10 +3230,10 @@
 		<region region-id="1563" left="42" top="4197" width="83.25" height="16.5" align-x="58.5" align-y="4206" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612564" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623539396" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612284" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541316" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3256,7 +3255,7 @@
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1564" left="42" top="4215" width="290.25" height="12.75" align-x="57.75" align-y="4224" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1564" left="42" top="4215" width="286.5" height="12.75" align-x="57.75" align-y="4224" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">s1</ml:id>
@@ -3276,7 +3275,7 @@
 			</math>
 			<rendering item-idref="109"/>
 		</region>
-		<region region-id="1565" left="42" top="4233" width="129" height="12.75" align-x="56.25" align-y="4242" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1565" left="42" top="4233" width="128.25" height="12.75" align-x="56.25" align-y="4242" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">s1</ml:id>
@@ -3287,13 +3286,13 @@
 			</math>
 			<rendering item-idref="110"/>
 		</region>
-		<region region-id="1566" left="42" top="4263" width="85.5" height="16.5" align-x="58.5" align-y="4272" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1566" left="42" top="4263" width="83.25" height="16.5" align-x="58.5" align-y="4272" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612884" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541436" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612124" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544636" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3311,11 +3310,11 @@
 			</math>
 			<rendering item-idref="111">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="84" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="81.75" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1567" left="42" top="4281" width="290.25" height="12.75" align-x="57.75" align-y="4290" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1567" left="42" top="4281" width="286.5" height="12.75" align-x="57.75" align-y="4290" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">s2</ml:id>
@@ -3335,7 +3334,7 @@
 			</math>
 			<rendering item-idref="112"/>
 		</region>
-		<region region-id="1568" left="42" top="4299" width="129" height="12.75" align-x="56.25" align-y="4308" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1568" left="42" top="4299" width="128.25" height="12.75" align-x="56.25" align-y="4308" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">s2</ml:id>
@@ -3346,13 +3345,13 @@
 			</math>
 			<rendering item-idref="113"/>
 		</region>
-		<region region-id="1569" left="42" top="4329" width="84.75" height="16.5" align-x="58.5" align-y="4338" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1569" left="42" top="4329" width="80.25" height="16.5" align-x="58.5" align-y="4338" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611764" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541316" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611804" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544676" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3370,11 +3369,11 @@
 			</math>
 			<rendering item-idref="114">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="83.25" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="78.75" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1570" left="42" top="4347" width="288.75" height="12.75" align-x="57.75" align-y="4356" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1570" left="42" top="4347" width="280.5" height="12.75" align-x="57.75" align-y="4356" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">s3</ml:id>
@@ -3394,7 +3393,7 @@
 			</math>
 			<rendering item-idref="115"/>
 		</region>
-		<region region-id="1571" left="42" top="4365" width="140.25" height="12.75" align-x="56.25" align-y="4374" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1571" left="42" top="4365" width="137.25" height="12.75" align-x="56.25" align-y="4374" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">s3</ml:id>
@@ -3405,13 +3404,13 @@
 			</math>
 			<rendering item-idref="116"/>
 		</region>
-		<region region-id="1572" left="42" top="4395" width="69" height="16.5" align-x="58.5" align-y="4404" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1572" left="42" top="4395" width="66.75" height="16.5" align-x="58.5" align-y="4404" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612884" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541276" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611964" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541436" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3429,11 +3428,11 @@
 			</math>
 			<rendering item-idref="117">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="67.5" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="65.25" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1573" left="42" top="4413" width="255.75" height="12.75" align-x="57.75" align-y="4422" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1573" left="42" top="4413" width="253.5" height="12.75" align-x="57.75" align-y="4422" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">s4</ml:id>
@@ -3464,13 +3463,13 @@
 			</math>
 			<rendering item-idref="119"/>
 		</region>
-		<region region-id="1575" left="42" top="4461" width="129.75" height="16.5" align-x="58.5" align-y="4470" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1575" left="42" top="4461" width="123.75" height="16.5" align-x="58.5" align-y="4470" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356611724" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541196" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612524" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541316" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3493,11 +3492,11 @@
 			</math>
 			<rendering item-idref="120">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="128.25" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="122.25" height="15" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1576" left="42" top="4479" width="285.75" height="12.75" align-x="57.75" align-y="4488" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1576" left="42" top="4479" width="280.5" height="12.75" align-x="57.75" align-y="4488" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">s5</ml:id>
@@ -3517,7 +3516,7 @@
 			</math>
 			<rendering item-idref="121"/>
 		</region>
-		<region region-id="1577" left="42" top="4497" width="138.75" height="12.75" align-x="56.25" align-y="4506" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1577" left="42" top="4497" width="137.25" height="12.75" align-x="56.25" align-y="4506" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
 					<ml:id xml:space="preserve">s5</ml:id>
@@ -3528,18 +3527,18 @@
 			</math>
 			<rendering item-idref="122"/>
 		</region>
-		<region region-id="1446" left="24" top="4526.25" width="301.5" height="11.25" align-x="48" align-y="4536" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1446" left="24" top="4526.25" width="315.75" height="12" align-x="48" align-y="4536" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<text use-page-width="false" push-down="false" lock-width="false">
 				<p style="Normal" margin-left="inherit" margin-right="inherit" text-indent="inherit" text-align="inherit" list-style-type="inherit" tabs="inherit">Определяем порядок обхода вершин для рисования видимых граней</p>
 			</text>
 		</region>
-		<region region-id="1578" left="42" top="4545.75" width="273.75" height="21.75" align-x="60" align-y="4560" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1578" left="42" top="4545.75" width="248.25" height="21.75" align-x="60" align-y="4560" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612084" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623544636" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356612684" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="623541036" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3547,23 +3546,39 @@
 					<contentHash xmlns="http://schemas.mathsoft.com/provenance10">a7a932899d2da3c177cabb0258aa4598</contentHash>
 					<ml:define>
 						<ml:id xml:space="preserve">Xs</ml:id>
-						<ml:apply><ml:matrix rows="2" cols="9"><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">x</ml:id><ml:id xml:space="preserve" subscript="a">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">x</ml:id><ml:id xml:space="preserve" subscript="b">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">x</ml:id><ml:id xml:space="preserve" subscript="b">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">x</ml:id><ml:id xml:space="preserve" subscript="c">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">x</ml:id><ml:id xml:space="preserve" subscript="c">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">x</ml:id><ml:id xml:space="preserve" subscript="a">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">x</ml:id><ml:id xml:space="preserve" subscript="a1">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">x</ml:id><ml:id xml:space="preserve" subscript="b1">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">x</ml:id><ml:id xml:space="preserve" subscript="b1">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">x</ml:id><ml:id xml:space="preserve" subscript="c1">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">x</ml:id><ml:id xml:space="preserve" subscript="c1">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">x</ml:id><ml:id xml:space="preserve" subscript="a1">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">x</ml:id><ml:id xml:space="preserve" subscript="a">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">x</ml:id><ml:id xml:space="preserve" subscript="a1">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">x</ml:id><ml:id xml:space="preserve" subscript="b">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">x</ml:id><ml:id xml:space="preserve" subscript="b1">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">x</ml:id><ml:id xml:space="preserve" subscript="c">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">x</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">x</ml:id><ml:id xml:space="preserve" subscript="c1">x</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply></ml:matrix></ml:apply>
+						<ml:apply>
+							<ml:transpose/>
+							<ml:matrix rows="1" cols="12">
+								<ml:id xml:space="preserve" subscript="a">x</ml:id>
+								<ml:id xml:space="preserve" subscript="a1">x</ml:id>
+								<ml:id xml:space="preserve" subscript="c1">x</ml:id>
+								<ml:id xml:space="preserve" subscript="c">x</ml:id>
+								<ml:id xml:space="preserve" subscript="a">x</ml:id>
+								<ml:id xml:space="preserve" subscript="a1">x</ml:id>
+								<ml:id xml:space="preserve" subscript="b1">x</ml:id>
+								<ml:id xml:space="preserve" subscript="b">x</ml:id>
+								<ml:id xml:space="preserve" subscript="a">x</ml:id>
+								<ml:id xml:space="preserve" subscript="a1">x</ml:id>
+								<ml:id xml:space="preserve" subscript="b1">x</ml:id>
+								<ml:id xml:space="preserve" subscript="c1">x</ml:id>
+							</ml:matrix>
+						</ml:apply>
 					</ml:define>
 				</ml:provenance>
 			</math>
 			<rendering item-idref="123">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="272.25" height="20.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="246.75" height="20.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1628" left="42" top="4581.75" width="264.75" height="21.75" align-x="60" align-y="4596" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1628" left="42" top="4581.75" width="265.5" height="21.75" align-x="59.25" align-y="4596" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<math optimize="false" disable-calc="false">
 				<ml:provenance expr-id="1" xmlns:ml="http://schemas.mathsoft.com/math30">
-					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356613644" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<originRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736421516" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</originRef>
-					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="356613164" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
+					<parentRef doc-id="9C9B2F8D-DBBA-45AE-BD92-12A217F81A32" version-id="50E55EC7-1933-47D4-B657-874C9F2719D0" branch-id="00000000-0000-0000-0000-000000000000" revision-num="736421196" is-modified="true" region-id="0" href="D:\OKG-4-term-master\OKG-4-term-master\Lab04\Lab04.xmcd" xmlns="http://schemas.mathsoft.com/provenance10">
 						<hash/>
 					</parentRef>
 					<comment xmlns="http://schemas.mathsoft.com/provenance10"/>
@@ -3571,17 +3586,33 @@
 					<contentHash xmlns="http://schemas.mathsoft.com/provenance10">cac48bc284555f9256a0af5c324dcf34</contentHash>
 					<ml:define>
 						<ml:id xml:space="preserve">Ys</ml:id>
-						<ml:apply><ml:matrix rows="2" cols="9"><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">y</ml:id><ml:id xml:space="preserve" subscript="a">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">y</ml:id><ml:id xml:space="preserve" subscript="b">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">y</ml:id><ml:id xml:space="preserve" subscript="b">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">y</ml:id><ml:id xml:space="preserve" subscript="c">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">y</ml:id><ml:id xml:space="preserve" subscript="c">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q4</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">y</ml:id><ml:id xml:space="preserve" subscript="a">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">y</ml:id><ml:id xml:space="preserve" subscript="a1">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">y</ml:id><ml:id xml:space="preserve" subscript="b1">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">y</ml:id><ml:id xml:space="preserve" subscript="b1">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">y</ml:id><ml:id xml:space="preserve" subscript="c1">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">y</ml:id><ml:id xml:space="preserve" subscript="c1">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q5</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">y</ml:id><ml:id xml:space="preserve" subscript="a1">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a">y</ml:id><ml:id xml:space="preserve" subscript="a">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="a1">y</ml:id><ml:id xml:space="preserve" subscript="a1">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b">y</ml:id><ml:id xml:space="preserve" subscript="b">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q2</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="b1">y</ml:id><ml:id xml:space="preserve" subscript="b1">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c">y</ml:id><ml:id xml:space="preserve" subscript="c">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q3</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">y</ml:id><ml:apply><ml:id xml:space="preserve">if</ml:id><ml:sequence><ml:apply><ml:greaterOrEqual/><ml:id xml:space="preserve">q1</ml:id><ml:real>0</ml:real></ml:apply><ml:id xml:space="preserve" subscript="c1">y</ml:id><ml:id xml:space="preserve" subscript="c1">y</ml:id></ml:sequence></ml:apply></ml:sequence></ml:apply></ml:matrix></ml:apply>
+						<ml:apply>
+							<ml:transpose/>
+							<ml:matrix rows="1" cols="12">
+								<ml:id xml:space="preserve" subscript="a">y</ml:id>
+								<ml:id xml:space="preserve" subscript="a1">y</ml:id>
+								<ml:id xml:space="preserve" subscript="c1">y</ml:id>
+								<ml:id xml:space="preserve" subscript="c">y</ml:id>
+								<ml:id xml:space="preserve" subscript="a">y</ml:id>
+								<ml:id xml:space="preserve" subscript="a1">y</ml:id>
+								<ml:id xml:space="preserve" subscript="b1">y</ml:id>
+								<ml:id xml:space="preserve" subscript="b">y</ml:id>
+								<ml:id xml:space="preserve" subscript="a">y</ml:id>
+								<ml:id xml:space="preserve" subscript="a1">y</ml:id>
+								<ml:id xml:space="preserve" subscript="b1">y</ml:id>
+								<ml:id xml:space="preserve" subscript="c1">y</ml:id>
+							</ml:matrix>
+						</ml:apply>
 					</ml:define>
 				</ml:provenance>
 			</math>
 			<rendering item-idref="124">
 				<element-image-map>
-					<box left="1.5" top="0.75" width="263.25" height="20.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
+					<box left="1.5" top="0.75" width="264" height="20.25" expr-idref="1" xmlns="http://schemas.mathsoft.com/worksheet30"/>
 				</element-image-map>
 			</rendering>
 		</region>
-		<region region-id="1580" left="42" top="4608" width="249" height="213.75" align-x="42" align-y="4608" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+		<region region-id="1580" left="42" top="4608" width="246.75" height="213.75" align-x="42" align-y="4608" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
 			<plot disable-calc="false" item-idref="125"/>
 			<rendering item-idref="126"/>
 		</region>
@@ -5051,17 +5082,17 @@ Ih6X5ll0b7xmheMaRAgXpXT3yxvvdpC1PQWXFhit7jYZ9cDbQ/GKz6Tl/SbSEALc39/zcjPV
 Mcbu3Rpv65a6cZ5nC4fKcM9qeTxaW46dFfhuDyb9Gi+ltdfkNl46f3yUMJ2J0VpmelUq9ri9
 Y+MpHZrd0mtGu4YgNwylNcHABTGjHdC38ZTuarrxXkOyZyCfNzA9Ag8EHNN3bzxgvg7zPSqw
 E6lrOuAhjAcsM1yhHTMw6BcYInB19jDGGzwX/wPBGfYlOshg/wAAAABJRU5ErkJggg==</item>
-		<item item-id="87" content-encoding="gzip">H4sIAAAAAAAA/4xTy27TUBCd67fduElJAmntNE0bYIcqiwV0VUqFuuAhhQXtqnId0xo1TXBd
-FHYR4j/Y8A3sER8W5uGYwoobje/M8TnzuL6pAYBCe4vmsa/j00k/DtPzbHJlAq3HaO5okghm
-MPaUaOPkzdmHNCkYgSHrNXxa1xfTg8lM4JdoNgLDivgK7QnabgPgK1Yfr/2JadUsaUoDTWfn
-TlX8WVHk2dlNkSpm7qHV4fYy9rb/ik1OYBR5mgYMRGj+lF0rWv8JMDft6Bvu+5Yju+3K7niy
-uyuRhkVGeD6m8Rke4UTvsEkGv1fgEYHgs2TurkbU14FP/bH7xeeSjcj7he+dNUmJA2vqBAeU
-ZBjq2gk8J2ZTMtktaaLZlr11l6mf2qRUuwD3OP5RxdARYWtdWuggtCEtdLiFQIImB6GQra5k
-Dzdl7/akv02abracbku6rEA+B+hLiu621OsjtCMl+lxiICOH9yXlgBo9BnggyQY08rGM/JAv
-T30UnZ7n8fTi9P0kH8eFzVnadAcZPoyLWL7tRvmNScX3lj71DrXEPkVePMuuX3Aeubch3UhV
-cmUt8Acq/H90mdwu8jhJo0NdzrUk9lQDVKAW5Cl0UNRTmgp0lPaUrgJjQYhBrxbomCrQ5vv4
-yiIOqWzmoOMs5S5yWO4hh+UryGF5DTks94lDqlXmoFMnDpGl3frrm3GaZ0l8KQficNtHaCPI
-8KeXfyavPM1/Vu128BsAAP//AwDuTAjBOAQAAA==</item>
+		<item item-id="87" content-encoding="gzip">H4sIAAAAAAAA/4xTS1PTUBQ+N++EhhbbaiEppVB15zAZF8oKkXFY+JipC2HFhDRCHEprCE7d
+Vf+IG3+De8cfVs8jjejK2zm553z5vvO4ua0BgEJ7i+axr+PTST8O0/NscmUCrcdo7miSCGYw
+9pRo4+TN2Yc0KRiBIes1fFrXF9ODyUzgl2g2AsOK+ArtCdpuA+ALVh+v/Ylp1SxpSgNNZ+dO
+VfxZUeTZ2U2RKmbuodXh9jL2tv+KTU5gFHmaBgxEaP6UXSta/wkwN+3oG+77liO77crueLK7
+K5GGRUZ4PqbxGR7hRO+wSQa/V+ARgeCzZO6uRtTXgU/9sfvV55KNyPuF7501SYkDa+oEB5Rk
+GOraCTwnZlMy2S1potmWvXWXqZ/apFS7APc4/lHF0BFha11a6CC0IS10uIVAgiYHoZCtrmQP
+N2Xv9qS/TZputpxuS7qsQD4H6EuK7rbU6yO0IyX6XGIgI4f3JeWAGj0GeCDJBjTysYz8kC9P
+fRSdnufx9OL0/SQfx4XNWdp0Bxk+jItYvu1G+Y1JxfeWPvUOtcQ+RV48y65fcB65tyHdSFVy
+ZS3wByr8f3SZ3C7yOEmjQ13OtST2VANUoBbkKXRQ1FOaCnSU9pSuAmNBiEGvFuiYKtDm+/jK
+Ig6pbOag4yzlLnJY7iGH5SvIYXkNOSz3iUOqVeagUycOkaXd+uubcZpnSXwpB+Jw20doI8jw
+p5d/Jq88zX9W7XbwGwAA//8DACWoqIQ4BAAA</item>
 		<item item-id="88">iVBORw0KGgoAAAANSUhEUgAAAUkAAAE9CAYAAACGOZB/AAAAAXNSR0IArs4c6QAAAARnQU1B
 AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABslSURBVHhe7d0NduK8EoRh1pUFsR5W
 w2ayGM+YhMQ4lvHPK6laqucc7v1icLtVyvQAySSXwczMki7zA2Zm9stD0sxshYekmdkKD0kz
@@ -5194,7 +5225,7 @@ W4ewdcFD0kJ4POO7Xt/+ZrslqXNfBqhZgoekBfH7+1j2Wz7XQ9K28JC0AMafJH0d7qmXx6vS
 rX0ekibqe6BNv89x+B5qz+91/BlmX+85vv6Srq3nzo5PHm828pC0ZtzvHm/G85C0Jnz+H5B3
 v0a2DDwkzcxWeEiama34BzJexi5FSK+kAAAAAElFTkSuQmCC</item>
 		<item item-id="89" content-encoding="gzip">H4sIAAAAAAAA/4xTS2/TQBCe9dtu3DxKA80GTFO4osriQk9tqVAPPKRwoJwq1zGtK0KC61bp
-LeKPwIHfwB3xd/ofwjwcUzix1nhnvv2+mdn1ugEACu0tWsC+iW8v+zzMTvPJJxtoPEXzR5NU
+LeKPwIHfwB3xa/orwjwcUzix1nhnvv2+mdn1ugEACu0tWsC+iW8v+zzMTvPJJxtoPEXzR5NU
 MIuxZ0Qbp29OzrO0ZASGrDfw7VycTfcnM4FforkIDGviK7RvWHW7BXCD/HH7T0wjdKQpAwyT
 nU5dfK8si/zksswUM3fQmnB7WDuDv2KbE1hlkWWagZgKTNl14o2fAHPbjb/ivOt4Mru+zF4g
 s78SG1hkhOdjW9fwBHf0DqDB4PcaPCQQQpbM/dWY+toPqT92v4RcsiUqDzen3mPcFr7bkVLt
@@ -5203,7 +5234,7 @@ FmuQdwuRpNAPpV6E0KaUiLjEIA5+4XpvS1IOqNEjgEeSDEPTOILnxHzMV6Q5io9Pi2R6dvxh
 UoyT0uUs63TTGD5IykS+YK/6kqTi20kfdIvqs09RkMzyixecR25nn+6dqrgyFviA6v8/ukzu
 lkWSZvGByUu6IkaqBUqrBXkKHRRFylDaRGmkTKWtBSEWLS3QsZU25ru45BCHVC5z0PGWch85
 LA+Qw/IV5LC8gRyWh8Qh1Spz0GkSh8jSbvP15Tgr8jT5KAficduHaCPI8TGrXyaoTvOf0bgd
-/AYAAP//AwDYoX9THgQAAA==</item>
+/AYAAP//AwCfBvPEHgQAAA==</item>
 		<item item-id="90">iVBORw0KGgoAAAANSUhEUgAAAUkAAAE9CAYAAACGOZB/AAAAAXNSR0IArs4c6QAAAARnQU1B
 AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABkTSURBVHhe7d0NduK8EoRh1sWCWA+r
 YTNZjAdDGIxjGf+8kqules7h3i8KtKXqTA+QzMypMzOzpNN4wczM3jwkzcxmeEiamc3wkDQz
@@ -5325,7 +5356,7 @@ f5XW++8kNPOQNG2PwTb6Swj+/G0vCQse+ximg78F5jkwv/+lB9YOD0mT9xhcr0HW/+0tiybk
 b5K+dLfUy+NZ6cd6SNoSHpIm73Z5D7e1g232sROD87U++Nd9rXEekibt7z/S1D8znP/xn5cl
 jx1/d/vx0nzFELb6eUiaqN+BNvw5x+53qL1+1vH/MHu+5/j5j3QtfexofXB/s56HpFXjdvN4
 M56HpFXh5z4gb36NbBl4SJqZzfCQNDOb8Q9luI6KHp/KywAAAABJRU5ErkJggg==</item>
-		<item item-id="91" content-encoding="gzip">H4sIAAAAAAAA/4xTTW/TQBCdtR3bcePmoyTQOMVtgBsHsECInkqpEAe+FC7lVLmJaYMICa6L
+		<item item-id="91" content-encoding="gzip">H4sIAAAAAAAA/4xTTW/TQBCdtR3bcePmoyTQOMVtgAM3sECInkqpEAe+FC7lVLmJaYMICa6L
 eoz4I1z4CYg74oeZNzMmFE6sNTszb9/M7OyuG0RkIK8hgdg2Zj/7OMpOpvMPNeJxD1KfzMeK
 OYI9ZNps/PL4XTYuBKGRxFuY3bPTxf78QuFnEA/AaEV8DnmFOosW0W2k22r/8XlMXN2URZYt
 RmdV/FFR5NPj8yIzwtyFNOnycHaHf/k1SeAUeZZFAiSQcCGmm2z+IFrWvOQL9J7rq/bqqv1A
@@ -5335,7 +5366,7 @@ WFK1FWuCaFurxYB2tEAsBYZJ8BPr/RsSPBnyNg+Jbmq3cG3rkB4z85Y8j+YkOTrJ08Xp0dt5
 PksLT7J0+ZUJfJAWqd5ev7pFaxuTXb3VbnXpRrwgvZiePZE8+jIH/OZMxdVR4iMz+H/0d3Kv
 yNNxlhzYshRVxNi0yESmZMuYCC2VsbFMZCM0NraJnJIRBxwqYdTAWe5hyWUOR3nCgeEzh8l1
 zsPhATgSvgaOhDfAkfBQasFYFw6MJnOYrNttvjifZfl0nL7XA/Fl20/5l6IpPrs6uaA6zX9G
-47LzCwAA//8DAAl/+zMaBAAA</item>
+47LzCwAA//8DAC1OH9caBAAA</item>
 		<item item-id="92">iVBORw0KGgoAAAANSUhEUgAAANkAAACtCAYAAAA9DdqhAAAAAXNSR0IArs4c6QAAAARnQU1B
 AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAA3xSURBVHhe7Z0NurK8DkUdlwNyPI7G
 yZzBcCyKlkqgP6s0hazn8d7PKDvNPokg+uJlMAyjKpcwYBgGiw2ZYVTGhswwKmNDZhiVsSEz
@@ -6485,16 +6516,16 @@ G7+xFWkfzY5HxKWAiqR7XobRI2gyvq5/ctX2e4JUtydIukXq425lYuvTwvMJUv2eIOm2qFER
 T8P3FdEvflL5yiC24D90AAD6ZTHzFAYzz2uDGAAA/hcQxAAA0BgEMQAANOYfS4n3U1OGERgA
 AAAASUVORK5CYII=</item>
 		<item item-id="125" content-encoding="gzip">H4sIAAAAAAAA/4xTS2/TQBCe9dtu3DQpDSSb4NJeUVVZHEpPpapQDzykcABOleu4rREhwXFR
-uEWo/4MLv4E7v8zMwzWFE2vNzsznb17rdQsAFMoblIBtE3cv+zzOLvPZJxtoPUHxJ7NUMIux
-p0Sbpq/PP2RpyQiMOd7A3VlczY9nS4FfoLgIjBviS5QDMh4A3GD1Uf+PT+uxI00ZYJhsdJvi
-z8qyyM+vy0wx8xClDXeXdbjzl29zAqssskwzEKOEczaduP8LYGW78XfUR44n2vVFe4Fofy02
-sMgEz8e2vsIeTvQWoMXgjwY8JRBCDln56zH1dRxSf2x+C7nkhkR5AKbxHhaIdCTC7Uqxzqbo
-7j1mftnEY1BqH2CL/Z+NDz0J7N6XUj06PynV41J9cTrsDITsaMk+GIrWIxltSFMsb6d4KE02
-IM8LkaTQ21IvQuiRlIi4xI5EDWi0dzzaLl+G9iQ+uyyS+dXZxayYJqXL7C26UwyfJGUi32pQ
-fzNjGzezvpm7KCO2yQuSZb54znnkHg7phqmaK6vCB9Tw/9Hb5G5ZJGkWn5j8StfESG2A0qoi
-SymNI1WRMpQ2MTRSptJWRYiFHKjQsJGzOsJXDnEoymUOGh5xiOxTHgoPkMPha8jh8BZyODzk
-WmisMweNNnGILO22X11PsyJPk49yIB63fYoygRwfs/45gvo0/1mtu85vAAAA//8DABMyRS4I
-BAAA</item>
+uIX+ES78Bu78MjMP1xROrDU7M5+/ea3XLQBQKG9QArZN3L3s8zi7zGefbKD1BMWfzFLBLMae
+Em2avj7/kKUlIzDmeAN3Z3E1P54tBX6B4iIwbogvUQ7IeADwDauP+n98Wo8dacoAw2Sj2xR/
+VpZFfn5dZoqZhyhtuLusw52/fJsTWGWRZZqBGCWcs+nE/V8AK9uNv6M+cjzRri/aC0T7a7GB
+RSZ4Prb1FfZworcALQZ/NOApgRByyMpfj6mv45D6Y/Mm5JIbEuUBmMZ7WCDSkQi3K8U6m6K7
+95j5ZROPQal9gC32fzY+9CSwe19K9ej8pFSPS/XF6bAzELKjJftgKFqPZLQhTbG8neKhNNmA
+PC9EkkJvS70IoUdSIuISOxI1oNHe8Wi7fBnak/jsskjmV2cXs2KalC6zt+hOMXySlIl8q0H9
+zYxt3Mz6Zu6ijNgmL0iW+eI555F7OKQbpmqurAofUMP/R2+Tu2WRpFl8YvIrXRMjtQFKq4os
+pTSOVEXKUNrE0EiZSlsVIRZyoELDRs7qCF85xKEolzloeMQhsk95KDxADoevIYfDW8jh8JBr
+obHOHDTaxCGytNt+dT3NijxNPsqBeNz2KcoEcnzM+ucI6tP8Z7XuOr8BAAD//wMAnoz5SwgE
+AAA=</item>
 		<item item-id="126">iVBORw0KGgoAAAANSUhEUgAAAUkAAAEdCAYAAACBlZVJAAAAAXNSR0IArs4c6QAAAARnQU1B
 AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAABYsSURBVHhe7d0LduI6EIRh1sWCWA+r
 YTMsxoMJDMYg48cvudSq7xzuuShJWyopPTwymUNnZmZJh/GAmZm9uEmamU1wkzQzm+AmaWY2
