@@ -115,12 +115,8 @@ protected:
 
     afx_msg void OnBezier()
     {
-        const std::vector<lab11::Point> quadratic_controls{
-            {0.0, 0.0}, {1.0, 1.25}, {2.0, 0.0}
-        };
-        const std::vector<lab11::Point> cubic_controls{
-            {0.0, 0.0}, {0.8, 1.25}, {1.8, 1.25}, {2.6, 0.0}
-        };
+        const auto quadratic_controls = lab11::AssignmentQuadraticControls();
+        const auto cubic_controls = lab11::AssignmentCubicControls();
         const std::vector<lab11::Point> quadratic_curve = sample_bezier(quadratic_controls);
         const std::vector<lab11::Point> cubic_curve = sample_bezier(cubic_controls);
         const bool quadratic_control_saved = export_points("Mathcad/bezier_2_control.txt", quadratic_controls);

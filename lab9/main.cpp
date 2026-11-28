@@ -14,18 +14,17 @@ constexpr UINT ID_LIGHT_FROM_FILE = 42004;
 constexpr UINT ID_LIGHT_DEFAULT = 42005;
 constexpr UINT ID_COLOR_PICKER = 42006;
 
-bool read_spherical(const char* path, double& radius, double& azimuth, double& zenith)
+bool read_angles(const char* path, double& azimuth, double& zenith)
 {
     std::ifstream input(path);
-    return input.is_open() && static_cast<bool>(input >> radius >> azimuth >> zenith) &&
-           std::isfinite(radius) && std::isfinite(azimuth) && std::isfinite(zenith) &&
-           radius > 0.0 && zenith >= 0.0 && zenith <= 180.0;
-}
-
-void normalize_azimuth(double& azimuth)
-{
-    while (azimuth < 0.0) azimuth += 360.0;
-    while (azimuth >= 360.0) azimuth -= 360.0;
+    if (!(input >> azimuth >> zenith) || !std::isfinite(azimuth) ||
+        !std::isfinite(zenith) || zenith < 0.0 || zenith > 180.0 || !(input >> std::ws).eof()) {
+        return false;
+    }
+    azimuth = std::fmod(azimuth, 360.0);
+    if (azimuth < 0.0) azimuth += 360.0;
+    if (azimuth >= 360.0 || azimuth == 0.0) azimuth = 0.0;
+    return true;
 }
 
 }
@@ -45,19 +44,14 @@ protected:
         }
         m_menu.CreateMenu();
         m_figure_menu.CreatePopupMenu();
+        m_figure_menu.AppendMenu(MF_STRING, ID_CAMERA_FROM_FILE, _T("Координаты камеры"));
+        m_figure_menu.AppendMenu(MF_STRING, ID_LIGHT_FROM_FILE, _T("Координаты источника света"));
+        m_figure_menu.AppendMenu(MF_STRING, ID_COLOR_PICKER, _T("Цвет источника света"));
         m_figure_menu.AppendMenu(MF_STRING, ID_DRAW_PYRAMID, _T("Пирамида"));
+        m_figure_menu.AppendMenu(MF_SEPARATOR);
+        m_figure_menu.AppendMenu(MF_STRING, ID_CAMERA_DEFAULT, _T("Камера по умолчанию"));
+        m_figure_menu.AppendMenu(MF_STRING, ID_LIGHT_DEFAULT, _T("Источник света по умолчанию"));
         m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_figure_menu.Detach()), _T("Фигура"));
-
-        m_camera_menu.CreatePopupMenu();
-        m_camera_menu.AppendMenu(MF_STRING, ID_CAMERA_FROM_FILE, _T("Положение из camera.txt"));
-        m_camera_menu.AppendMenu(MF_STRING, ID_CAMERA_DEFAULT, _T("По умолчанию"));
-        m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_camera_menu.Detach()), _T("Камера"));
-
-        m_light_menu.CreatePopupMenu();
-        m_light_menu.AppendMenu(MF_STRING, ID_LIGHT_FROM_FILE, _T("Положение из light.txt"));
-        m_light_menu.AppendMenu(MF_STRING, ID_LIGHT_DEFAULT, _T("По умолчанию"));
-        m_light_menu.AppendMenu(MF_STRING, ID_COLOR_PICKER, _T("Цвет источника..."));
-        m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_light_menu.Detach()), _T("Источник света"));
         SetMenu(&m_menu);
         return 0;
     }
@@ -101,15 +95,13 @@ protected:
 
     afx_msg void OnCameraFromFile()
     {
-        double radius = 0.0;
         double azimuth = 0.0;
         double zenith = 0.0;
-        if (!read_spherical("camera.txt", radius, azimuth, zenith)) {
-            AfxMessageBox(_T("camera.txt должен содержать r, азимут и зенит; r > 0, 0° ≤ зенит ≤ 180°."), MB_ICONWARNING);
+        if (!read_angles("camera.txt", azimuth, zenith)) {
+            AfxMessageBox(_T("camera.txt должен содержать азимут и зенит в градусах. Радиус камеры фиксирован: 10."), MB_ICONWARNING);
             return;
         }
-        normalize_azimuth(azimuth);
-        m_camera = CMatrix(radius, azimuth, zenith);
+        m_camera = CMatrix(10.0, azimuth, zenith);
         Invalidate(FALSE);
     }
 
@@ -121,15 +113,13 @@ protected:
 
     afx_msg void OnLightFromFile()
     {
-        double radius = 0.0;
         double azimuth = 0.0;
         double zenith = 0.0;
-        if (!read_spherical("light.txt", radius, azimuth, zenith)) {
-            AfxMessageBox(_T("light.txt должен содержать r, азимут и зенит; r > 0, 0° ≤ зенит ≤ 180°."), MB_ICONWARNING);
+        if (!read_angles("light.txt", azimuth, zenith)) {
+            AfxMessageBox(_T("light.txt должен содержать азимут и зенит в градусах. Радиус источника фиксирован: 100."), MB_ICONWARNING);
             return;
         }
-        normalize_azimuth(azimuth);
-        m_light = CMatrix(radius, azimuth, zenith);
+        m_light = CMatrix(100.0, azimuth, zenith);
         Invalidate(FALSE);
     }
 
@@ -153,8 +143,6 @@ protected:
 private:
     CMenu m_menu;
     CMenu m_figure_menu;
-    CMenu m_camera_menu;
-    CMenu m_light_menu;
     CPyramid m_pyramid;
     CMatrix m_camera;
     CMatrix m_light;

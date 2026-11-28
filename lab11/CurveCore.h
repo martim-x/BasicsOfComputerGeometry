@@ -14,6 +14,8 @@ struct Point {
 
 std::vector<Point> AssignmentLagrangeNodes();
 std::vector<Point> AssignmentLagrangeCurve(const std::vector<Point>& nodes);
+std::vector<Point> AssignmentQuadraticControls();
+std::vector<Point> AssignmentCubicControls();
 std::vector<Point> BezierPoints(const std::vector<Point>& control_points, int segments);
 void WritePointFile(const std::string& path, const std::vector<Point>& points);
 

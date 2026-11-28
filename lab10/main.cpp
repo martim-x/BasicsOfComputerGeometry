@@ -14,19 +14,20 @@ constexpr UINT ID_CAMERA_DEFAULT = 43004;
 constexpr UINT ID_LIGHT_FROM_FILE = 43005;
 constexpr UINT ID_LIGHT_DEFAULT = 43006;
 constexpr UINT ID_COLOR_PICKER = 43007;
+constexpr double sphere_radius = 2.0;
 
-bool read_spherical(const char* path, double& radius, double& azimuth, double& zenith)
+bool read_spherical(const char* path, double min_radius, double& radius, double& azimuth, double& zenith)
 {
     std::ifstream input(path);
-    return input.is_open() && static_cast<bool>(input >> radius >> azimuth >> zenith) &&
-           std::isfinite(radius) && std::isfinite(azimuth) && std::isfinite(zenith) &&
-           radius > 0.0 && zenith >= 0.0 && zenith <= 180.0;
-}
-
-void normalize_azimuth(double& azimuth)
-{
-    while (azimuth < 0.0) azimuth += 360.0;
-    while (azimuth >= 360.0) azimuth -= 360.0;
+    if (!(input >> radius >> azimuth >> zenith) || !std::isfinite(radius) ||
+        !std::isfinite(azimuth) || !std::isfinite(zenith) || radius <= min_radius ||
+        zenith < 0.0 || zenith > 180.0 || !(input >> std::ws).eof()) {
+        return false;
+    }
+    azimuth = std::fmod(azimuth, 360.0);
+    if (azimuth < 0.0) azimuth += 360.0;
+    if (azimuth >= 360.0 || azimuth == 0.0) azimuth = 0.0;
+    return true;
 }
 
 }
@@ -46,22 +47,17 @@ protected:
         }
         m_menu.CreateMenu();
         m_figure_menu.CreatePopupMenu();
+        m_figure_menu.AppendMenu(MF_STRING, ID_CAMERA_FROM_FILE, _T("Камера (r, φ, θ)"));
+        m_figure_menu.AppendMenu(MF_STRING, ID_LIGHT_FROM_FILE, _T("Источник света (r, φ, θ)"));
+        m_figure_menu.AppendMenu(MF_STRING, ID_COLOR_PICKER, _T("Цвет источника света (R, G, B)"));
         m_sphere_menu.CreatePopupMenu();
         m_sphere_menu.AppendMenu(MF_STRING, ID_SPHERE_DIFFUSE, _T("Диффузная модель"));
         m_sphere_menu.AppendMenu(MF_STRING, ID_SPHERE_SPECULAR, _T("Зеркальная модель"));
         m_figure_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_sphere_menu.Detach()), _T("Шар"));
+        m_figure_menu.AppendMenu(MF_SEPARATOR);
+        m_figure_menu.AppendMenu(MF_STRING, ID_CAMERA_DEFAULT, _T("Камера по умолчанию"));
+        m_figure_menu.AppendMenu(MF_STRING, ID_LIGHT_DEFAULT, _T("Источник света по умолчанию"));
         m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_figure_menu.Detach()), _T("Фигура"));
-
-        m_camera_menu.CreatePopupMenu();
-        m_camera_menu.AppendMenu(MF_STRING, ID_CAMERA_FROM_FILE, _T("Положение из camera.txt"));
-        m_camera_menu.AppendMenu(MF_STRING, ID_CAMERA_DEFAULT, _T("По умолчанию"));
-        m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_camera_menu.Detach()), _T("Камера"));
-
-        m_light_menu.CreatePopupMenu();
-        m_light_menu.AppendMenu(MF_STRING, ID_LIGHT_FROM_FILE, _T("Положение из light.txt"));
-        m_light_menu.AppendMenu(MF_STRING, ID_LIGHT_DEFAULT, _T("По умолчанию"));
-        m_light_menu.AppendMenu(MF_STRING, ID_COLOR_PICKER, _T("Цвет источника..."));
-        m_menu.AppendMenu(MF_POPUP, reinterpret_cast<UINT_PTR>(m_light_menu.Detach()), _T("Источник света"));
         SetMenu(&m_menu);
         return 0;
     }
@@ -75,7 +71,7 @@ protected:
         if (m_mode < 0) {
             return;
         }
-        DrawLightSphere(dc, 2.0, m_camera, m_light, client, m_light_color, m_mode);
+        DrawLightSphere(dc, sphere_radius, m_camera, m_light, client, m_light_color, m_mode);
         dc.SetBkMode(TRANSPARENT);
         CString camera_text;
         CString light_text;
@@ -114,11 +110,10 @@ protected:
         double radius = 0.0;
         double azimuth = 0.0;
         double zenith = 0.0;
-        if (!read_spherical("camera.txt", radius, azimuth, zenith)) {
-            AfxMessageBox(_T("camera.txt должен содержать r, азимут и зенит; r > 0, 0° ≤ зенит ≤ 180°."), MB_ICONWARNING);
+        if (!read_spherical("camera.txt", sphere_radius, radius, azimuth, zenith)) {
+            AfxMessageBox(_T("camera.txt должен содержать r, азимут и зенит; r > 2, 0° ≤ зенит ≤ 180°."), MB_ICONWARNING);
             return;
         }
-        normalize_azimuth(azimuth);
         m_camera = CMatrix(radius, azimuth, zenith);
         Invalidate(FALSE);
     }
@@ -134,11 +129,10 @@ protected:
         double radius = 0.0;
         double azimuth = 0.0;
         double zenith = 0.0;
-        if (!read_spherical("light.txt", radius, azimuth, zenith)) {
+        if (!read_spherical("light.txt", 0.0, radius, azimuth, zenith)) {
             AfxMessageBox(_T("light.txt должен содержать r, азимут и зенит; r > 0, 0° ≤ зенит ≤ 180°."), MB_ICONWARNING);
             return;
         }
-        normalize_azimuth(azimuth);
         m_light = CMatrix(radius, azimuth, zenith);
         Invalidate(FALSE);
     }
@@ -164,8 +158,6 @@ private:
     CMenu m_menu;
     CMenu m_figure_menu;
     CMenu m_sphere_menu;
-    CMenu m_camera_menu;
-    CMenu m_light_menu;
     CMatrix m_camera;
     CMatrix m_light;
     COLORREF m_light_color = RGB(255, 255, 0);

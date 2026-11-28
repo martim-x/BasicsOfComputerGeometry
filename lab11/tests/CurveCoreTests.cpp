@@ -140,6 +140,22 @@ void test_assignment_lagrange_nodes_and_sample_count()
     }
 }
 
+void test_assignment_bezier_matches_control_shape()
+{
+    const auto quadratic = lab11::AssignmentQuadraticControls();
+    const auto cubic = lab11::AssignmentCubicControls();
+    assert(quadratic.size() == 3 && cubic.size() == 4);
+    assert(quadratic[1].x > (quadratic.front().x + quadratic.back().x) / 2.0);
+    for (const auto& points : {quadratic, cubic}) {
+        assert(points.front().y > points.back().y);
+        const auto curve = lab11::BezierPoints(points, 100);
+        assert(curve.size() == 101);
+        assert(near(curve.front().x, points.front().x) && near(curve.front().y, points.front().y));
+        assert(near(curve.back().x, points.back().x) && near(curve.back().y, points.back().y));
+    }
+    assert(cubic[1].y > cubic[2].y);
+}
+
 void test_mathcad_export_writes_two_numeric_columns()
 {
     const char* path = "/tmp/lab11-mathcad-export-test.txt";
@@ -170,6 +186,7 @@ int main()
     test_bezier_uses_geometric_de_casteljau_construction();
     test_bezier_rejects_invalid_segment_count();
     test_assignment_lagrange_nodes_and_sample_count();
+    test_assignment_bezier_matches_control_shape();
     test_mathcad_export_writes_two_numeric_columns();
     std::cout << "Lab 11 curve core tests: PASS\n";
     return 0;

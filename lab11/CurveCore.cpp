@@ -143,6 +143,16 @@ std::vector<lab11::Point> lab11::AssignmentLagrangeCurve(const std::vector<Point
     return curve;
 }
 
+std::vector<lab11::Point> lab11::AssignmentQuadraticControls()
+{
+    return {{0.0, 0.0}, {2.0, 2.0}, {2.6, -0.7}};
+}
+
+std::vector<lab11::Point> lab11::AssignmentCubicControls()
+{
+    return {{0.0, 0.0}, {0.9, 1.9}, {2.7, 1.6}, {3.0, -0.45}};
+}
+
 std::vector<lab11::Point> lab11::BezierPoints(const std::vector<Point>& control_points,
                                              int segments)
 {
