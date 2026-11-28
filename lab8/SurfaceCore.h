@@ -1,5 +1,6 @@
 #pragma once
 
+#include <iosfwd>
 #include <vector>
 
 namespace lab8 {
@@ -9,6 +10,14 @@ enum class SurfaceKind {
     HyperbolicParaboloid,
     UpperHemisphere
 };
+
+struct Camera {
+    static constexpr double radius = 10.0;
+    double azimuth = 45.0;
+    double zenith = 45.0;
+};
+
+bool ReadCameraAngles(std::istream& input, Camera& camera);
 
 struct Vec3 {
     double x;

@@ -1,7 +1,9 @@
 #include "SurfaceCore.h"
 
 #include <algorithm>
+#include <array>
 #include <cmath>
+#include <istream>
 #include <limits>
 
 namespace lab8 {
@@ -55,6 +57,21 @@ bool grid_count(double minimum, double maximum, double step, std::size_t& count)
 
 }
 
+bool ReadCameraAngles(std::istream& input, Camera& camera)
+{
+    Camera next;
+    if (!(input >> next.azimuth >> next.zenith) || !finite(next.azimuth) ||
+        !finite(next.zenith) || next.zenith < 0.0 || next.zenith > 180.0 ||
+        !((input >> std::ws).eof())) {
+        return false;
+    }
+    next.azimuth = std::fmod(next.azimuth, 360.0);
+    if (next.azimuth < 0.0) next.azimuth += 360.0;
+    if (next.azimuth >= 360.0 || next.azimuth == 0.0) next.azimuth = 0.0;
+    camera = next;
+    return true;
+}
+
 bool EvaluateSurface(SurfaceKind kind, double x, double y, double& z)
 {
     if (!finite(x) || !finite(y)) {
@@ -101,9 +118,8 @@ std::vector<Triangle> BuildSurface(SurfaceKind kind, double x_min, double x_max,
         for (std::size_t j = 0; j <= y_intervals; ++j) {
             const double y = y_min + static_cast<double>(j) * step;
             double z = 0.0;
-            if (EvaluateSurface(kind, x, y, z)) {
-                grid[i][j] = {{x, y, z}, true};
-            }
+            const bool valid = EvaluateSurface(kind, x, y, z);
+            grid[i][j] = {{x, y, z}, valid};
         }
     }
 
@@ -114,11 +130,38 @@ std::vector<Triangle> BuildSurface(SurfaceKind kind, double x_min, double x_max,
             const Sample& p10 = grid[i + 1][j];
             const Sample& p11 = grid[i + 1][j + 1];
             const Sample& p01 = grid[i][j + 1];
-            if (!(p00.valid && p10.valid && p11.valid && p01.valid)) {
-                continue;
+            if (p00.valid && p10.valid && p11.valid && p01.valid) {
+                triangles.push_back({p00.point, p10.point, p11.point, 0.0});
+                triangles.push_back({p00.point, p11.point, p01.point, 0.0});
+            } else if (kind == SurfaceKind::UpperHemisphere) {
+                const std::array<const Sample*, 4> corners{&p00, &p10, &p11, &p01};
+                std::array<Vec3, 8> polygon{};
+                std::size_t count = 0;
+                for (std::size_t k = 0; k < corners.size(); ++k) {
+                    const Sample& a = *corners[k];
+                    const Sample& b = *corners[(k + 1) % corners.size()];
+                    if (a.valid) {
+                        polygon[count++] = a.point;
+                    }
+                    if (a.valid != b.valid) {
+                        const Vec3& inside = a.valid ? a.point : b.point;
+                        if (inside.z == 0.0) {
+                            continue;
+                        }
+                        const Vec3& outside = a.valid ? b.point : a.point;
+                        if (inside.x == outside.x) {
+                            const double y = std::sqrt(std::max(0.0, sphere_radius * sphere_radius - inside.x * inside.x));
+                            polygon[count++] = {inside.x, std::copysign(y, outside.y), 0.0};
+                        } else {
+                            const double x = std::sqrt(std::max(0.0, sphere_radius * sphere_radius - inside.y * inside.y));
+                            polygon[count++] = {std::copysign(x, outside.x), inside.y, 0.0};
+                        }
+                    }
+                }
+                for (std::size_t k = 1; k + 1 < count; ++k) {
+                    triangles.push_back({polygon[0], polygon[k], polygon[k + 1], 0.0});
+                }
             }
-            triangles.push_back({p00.point, p10.point, p11.point, 0.0});
-            triangles.push_back({p00.point, p11.point, p01.point, 0.0});
         }
     }
     return triangles;

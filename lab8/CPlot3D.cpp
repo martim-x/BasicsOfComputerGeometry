@@ -7,7 +7,7 @@ namespace lab8 {
 namespace {
 
 struct ScreenTriangle {
-    CPoint points[3];
+    ProjectedPoint points[3];
 };
 
 void include_point(const ProjectedPoint& point, double& min_x, double& max_x,
@@ -27,7 +27,7 @@ void include_point(const ProjectedPoint& point, double& min_x, double& max_x,
 
 }
 
-void CPlot3D::Draw(CDC& dc, const CRect& window_rect, SurfaceKind kind,
+void CPlot3D::Draw(HDC dc, const RECT& window_rect, SurfaceKind kind,
                    double azimuth_degrees, double zenith_degrees) const
 {
     double x_min = -5.0;
@@ -59,21 +59,20 @@ void CPlot3D::Draw(CDC& dc, const CRect& window_rect, SurfaceKind kind,
     double max_y = 0.0;
     bool initialized = false;
     for (const Triangle& triangle : triangles) {
-        const ProjectedPoint projected[3] = {
+        const ScreenTriangle screen{{
             ProjectPoint(triangle.p0, azimuth_degrees, zenith_degrees),
             ProjectPoint(triangle.p1, azimuth_degrees, zenith_degrees),
             ProjectPoint(triangle.p2, azimuth_degrees, zenith_degrees)
-        };
-        ScreenTriangle screen{};
-        for (int i = 0; i < 3; ++i) {
-            include_point(projected[i], min_x, max_x, min_y, max_y, initialized);
+        }};
+        for (const auto& point : screen.points) {
+            include_point(point, min_x, max_x, min_y, max_y, initialized);
         }
         screen_triangles.push_back(screen);
     }
 
     const int margin = 36;
-    const int available_width = window_rect.Width() - 2 * margin;
-    const int available_height = window_rect.Height() - 2 * margin;
+    const LONG available_width = window_rect.right - window_rect.left - 2 * margin;
+    const LONG available_height = window_rect.bottom - window_rect.top - 2 * margin;
     const double span_x = max_x - min_x;
     const double span_y = max_y - min_y;
     if (available_width <= 0 || available_height <= 0 || span_x <= 0.0 || span_y <= 0.0) {
@@ -88,25 +87,22 @@ void CPlot3D::Draw(CDC& dc, const CRect& window_rect, SurfaceKind kind,
     const double pixel_center_x = (window_rect.left + window_rect.right) * 0.5;
     const double pixel_center_y = (window_rect.top + window_rect.bottom) * 0.5;
 
-    for (std::size_t n = 0; n < triangles.size(); ++n) {
-        const Vec3* vertices[3] = {&triangles[n].p0, &triangles[n].p1, &triangles[n].p2};
-        for (int i = 0; i < 3; ++i) {
-            const ProjectedPoint p = ProjectPoint(*vertices[i], azimuth_degrees, zenith_degrees);
-            const int px = static_cast<int>(std::lround(pixel_center_x + (p.x - center_x) * scale));
-            const int py = static_cast<int>(std::lround(pixel_center_y - (p.y - center_y) * scale));
-            screen_triangles[n].points[i] = CPoint(px, py);
-        }
-    }
-
-    CPen pen(PS_SOLID, 1, RGB(30, 45, 60));
-    CBrush brush(color);
-    CPen* old_pen = dc.SelectObject(&pen);
-    CBrush* old_brush = dc.SelectObject(&brush);
+    const int saved = SaveDC(dc);
+    if (saved == 0) return;
+    SelectObject(dc, GetStockObject(DC_PEN));
+    SelectObject(dc, GetStockObject(DC_BRUSH));
+    SetDCPenColor(dc, RGB(30, 45, 60));
+    SetDCBrushColor(dc, color);
     for (const ScreenTriangle& triangle : screen_triangles) {
-        dc.Polygon(triangle.points, 3);
+        POINT pixels[3];
+        for (int i = 0; i < 3; ++i) {
+            const auto& p = triangle.points[i];
+            pixels[i] = {std::lround(pixel_center_x + (p.x - center_x) * scale),
+                         std::lround(pixel_center_y - (p.y - center_y) * scale)};
+        }
+        Polygon(dc, pixels, 3);
     }
-    dc.SelectObject(old_pen);
-    dc.SelectObject(old_brush);
+    RestoreDC(dc, saved);
 }
 
 }
